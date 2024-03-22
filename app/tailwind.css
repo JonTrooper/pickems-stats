@@ -1,0 +1,10 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  color: white;
+  font-family: 'Inter', sans-serif;
+  background-color: rgb(20, 20, 20);
+  color-scheme: dark;
+}
