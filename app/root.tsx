@@ -23,6 +23,30 @@ export function Layout({ children }: { children: React.ReactNode }) {
         <Links />
       </head>
       <body>
+        <svg
+          className="pointer-events-none fixed isolate z-50 opacity-40 mix-blend-soft-light"
+          width="100%"
+          height="100%"
+        >
+          <defs>
+            <filter
+              id="MyFilter"
+              filterUnits="userSpaceOnUse"
+              x="0"
+              y="0"
+              width="100%"
+              height="100%"
+            >
+              <feTurbulence
+                type="fractalNoise"
+                baseFrequency="0.80"
+                numOctaves="4"
+                stitchTiles="stitch"
+              />
+            </filter>
+          </defs>
+          <use filter="url(#MyFilter)" x="0" y="0" />
+        </svg>
         {children}
         <ScrollRestoration />
         <Scripts />

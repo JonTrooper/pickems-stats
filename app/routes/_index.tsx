@@ -1,17 +1,7 @@
 import type { MetaFunction } from "@remix-run/node";
-import { BarList, Divider } from "@tremor/react";
-import {
-  Bar,
-  BarChart,
-  Legend,
-  Line,
-  LineChart,
-  Pie,
-  PieChart,
-  ResponsiveContainer,
-  XAxis,
-  YAxis,
-} from "recharts";
+import { RiVerifiedBadgeFill } from "@remixicon/react";
+import { Badge, BarList, Divider } from "@tremor/react";
+import { Legend, Line, LineChart, ResponsiveContainer } from "recharts";
 
 export const meta: MetaFunction = () => {
   return [
@@ -249,13 +239,16 @@ const teamData = [
 export default function Index() {
   return (
     <div className="max-w-2xl m-auto">
-      <div className="m-4">
-        <h1 className="m-auto w-max font-medium font-display text-3xl drop-shadow-md">
+      <div className="pt-4 pb-4 pl-2 pr-2">
+        <h1 className="m-auto w-max font-medium font-display drop-shadow-md md:text-3xl sm:text-2xl text-xl">
           🏆 CS2 Copenhagen 2024 Pick'Em Stats 📊
         </h1>
         <h3 className="m-auto w-max font-medium font-display drop-shadow-md">
           Winner Takes All
         </h3>
+        <div className="w-max m-auto mt-2">
+          <Badge icon={RiVerifiedBadgeFill}>Day 1</Badge>
+        </div>
         <div className="mb-4">
           <ResponsiveContainer width="99%" height={360}>
             <LineChart width={600} height={400} data={score}>
@@ -317,7 +310,7 @@ export default function Index() {
           </ResponsiveContainer>
         </div>
         <Divider>Team Picks</Divider>
-        <BarList data={teamData} />
+        <BarList showAnimation={true} data={teamData} />
       </div>
     </div>
   );
