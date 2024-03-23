@@ -5,12 +5,19 @@ import { Legend, Line, LineChart, ResponsiveContainer } from "recharts";
 
 export const meta: MetaFunction = () => {
   return [
-    { title: "2024 Pick'Ems Tournament" },
+    { title: "2024 Pick'Ems Tournament 🏆" },
+    {
+      property: "og:title",
+      content: "2024 Pick'Ems Tournament",
+    },
+    {
+      property: "og:image",
+      content: "img/stats_preview.png",
+    },
     {
       name: "description",
       content: "CS2 Copenhagen 2024 PickEms Tournament Stats",
     },
-    { image: "img/stats_preview.png" },
   ];
 };
 
