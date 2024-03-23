@@ -7,16 +7,20 @@ export const meta: MetaFunction = () => {
   return [
     { title: "2024 Pick'Ems Tournament 🏆" },
     {
+      name: "description",
+      content: "CS2 Copenhagen 2024 PickEms Tournament Stats",
+    },
+    {
       property: "og:title",
       content: "2024 Pick'Ems Tournament",
     },
     {
       property: "og:image",
-      content: "img/stats_preview.png",
+      content: "https://pickems-tournament.vercel.app/img/stats_preview.png",
     },
     {
-      name: "description",
-      content: "CS2 Copenhagen 2024 PickEms Tournament Stats",
+      property: "og:description",
+      content: "CS2: Copenhagen Major 2024 - PickEms Tournament Stats",
     },
   ];
 };
