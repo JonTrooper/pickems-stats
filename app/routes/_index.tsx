@@ -240,10 +240,10 @@ export default function Index() {
   return (
     <div className="max-w-2xl m-auto">
       <div className="pt-4 pb-4 pl-2 pr-2">
-        <h1 className="m-auto w-max font-medium font-display drop-shadow-md md:text-3xl sm:text-2xl text-xl">
+        <h1 className="m-auto w-max font-medium drop-shadow-md md:text-3xl sm:text-2xl text-xl">
           🏆 CS2 Copenhagen 2024 Pick'Em Stats 📊
         </h1>
-        <h3 className="m-auto w-max font-medium font-display drop-shadow-md">
+        <h3 className="m-auto w-max font-medium drop-shadow-md">
           Winner Takes All
         </h3>
         <div className="w-max m-auto mt-2">

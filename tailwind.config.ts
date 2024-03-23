@@ -10,8 +10,7 @@ export default {
   ],
   theme: {
     fontFamily: {
-      sans: ["Inter", "sans-serif"],
-      display: ["stratum2"],
+      sans: ["stratum2", "sans-serif"],
     },
     transparent: "transparent",
     current: "currentColor",
