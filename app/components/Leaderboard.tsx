@@ -28,8 +28,8 @@ export default function Leaderboard({ data }: { data: any[] }) {
           <span className="font-medium text-tremor-content-strong dark:text-dark-tremor-content-strong">
             {data[data.length - 1].tttslr * 0.1}pts
           </span>
-          <BadgeDelta deltaType="moderateIncrease" isIncreasePositive={true}>
-            2
+          <BadgeDelta deltaType="increase" isIncreasePositive={true}>
+            4
           </BadgeDelta>
         </div>
       </Card>
@@ -58,8 +58,8 @@ export default function Leaderboard({ data }: { data: any[] }) {
           <span className="font-medium text-tremor-content-strong dark:text-dark-tremor-content-strong">
             {data[data.length - 1].bill * 0.1}pts
           </span>
-          <BadgeDelta deltaType="unchanged" isIncreasePositive={true}>
-            0
+          <BadgeDelta deltaType="moderateIncrease" isIncreasePositive={true}>
+            2
           </BadgeDelta>
         </div>
       </Card>
@@ -88,8 +88,8 @@ export default function Leaderboard({ data }: { data: any[] }) {
           <span className="font-medium text-tremor-content-strong dark:text-dark-tremor-content-strong">
             {data[data.length - 1].b0sskit * 0.1}pts
           </span>
-          <BadgeDelta deltaType="moderateIncrease" isIncreasePositive={true}>
-            2
+          <BadgeDelta deltaType="increase" isIncreasePositive={true}>
+            4
           </BadgeDelta>
         </div>
       </Card>
@@ -118,8 +118,8 @@ export default function Leaderboard({ data }: { data: any[] }) {
           <span className="font-medium text-tremor-content-strong dark:text-dark-tremor-content-strong">
             {data[data.length - 1].rabbit * 0.1}pts
           </span>
-          <BadgeDelta deltaType="unchanged" isIncreasePositive={true}>
-            0
+          <BadgeDelta deltaType="moderateIncrease" isIncreasePositive={true}>
+            2
           </BadgeDelta>
         </div>
       </Card>
@@ -148,8 +148,8 @@ export default function Leaderboard({ data }: { data: any[] }) {
           <span className="font-medium text-tremor-content-strong dark:text-dark-tremor-content-strong">
             {data[data.length - 1].ujei * 0.1}pts
           </span>
-          <BadgeDelta deltaType="unchanged" isIncreasePositive={true}>
-            0
+          <BadgeDelta deltaType="moderateIncrease" isIncreasePositive={true}>
+            2
           </BadgeDelta>
         </div>
       </Card>
@@ -208,8 +208,8 @@ export default function Leaderboard({ data }: { data: any[] }) {
           <span className="font-medium text-tremor-content-strong dark:text-dark-tremor-content-strong">
             {data[data.length - 1].lils * 0.1}pts
           </span>
-          <BadgeDelta deltaType="unchanged" isIncreasePositive={true}>
-            0
+          <BadgeDelta deltaType="moderateIncrease" isIncreasePositive={true}>
+            2
           </BadgeDelta>
         </div>
       </Card>
