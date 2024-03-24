@@ -1,7 +1,10 @@
 import type { MetaFunction } from "@remix-run/node";
+import { Await, useLoaderData } from "@remix-run/react";
 import { RiVerifiedBadgeFill } from "@remixicon/react";
 import { Badge, BarList, Divider } from "@tremor/react";
+import { Suspense } from "react";
 import { Legend, Line, LineChart, ResponsiveContainer } from "recharts";
+import Matches from "~/components/Matches";
 
 export const meta: MetaFunction = () => {
   return [
@@ -26,6 +29,99 @@ export const meta: MetaFunction = () => {
 };
 
 const score = [
+  {
+    name: "Start",
+    tttslr: 0,
+    bill: 0,
+    rabbit: 0,
+    b0sskit: 0,
+    ujei: 0,
+    lils: 0,
+    jontrooper: 0,
+  },
+  {
+    name: "Match 1",
+    tttslr: 20,
+    bill: 20,
+    rabbit: 20,
+    b0sskit: 20,
+    ujei: 20,
+    lils: 0,
+    jontrooper: 0,
+  },
+  {
+    name: "Match 2",
+    tttslr: 20,
+    bill: 40,
+    rabbit: 40,
+    b0sskit: 20,
+    ujei: 20,
+    lils: 20,
+    jontrooper: 20,
+  },
+  {
+    name: "Match 3",
+    tttslr: 20,
+    bill: 40,
+    rabbit: 40,
+    b0sskit: 20,
+    ujei: 20,
+    lils: 30,
+    jontrooper: 20,
+  },
+  {
+    name: "Match 4",
+    tttslr: 20,
+    bill: 40,
+    rabbit: 50,
+    b0sskit: 20,
+    ujei: 30,
+    lils: 40,
+    jontrooper: 20,
+  },
+  {
+    name: "Match 5",
+    tttslr: 20,
+    bill: 40,
+    rabbit: 50,
+    b0sskit: 20,
+    ujei: 30,
+    lils: 50,
+    jontrooper: 30,
+  },
+  {
+    name: "Match 6",
+    tttslr: 30,
+    bill: 50,
+    rabbit: 60,
+    b0sskit: 30,
+    ujei: 40,
+    lils: 50,
+    jontrooper: 40,
+  },
+  {
+    name: "Match 7",
+    tttslr: 50,
+    bill: 70,
+    rabbit: 60,
+    b0sskit: 30,
+    ujei: 40,
+    lils: 50,
+    jontrooper: 40,
+  },
+  {
+    name: "Match 8",
+    tttslr: 50,
+    bill: 70,
+    rabbit: 60,
+    b0sskit: 30,
+    ujei: 40,
+    lils: 70,
+    jontrooper: 60,
+  },
+];
+
+const scoreTwo = [
   {
     name: "Start",
     tttslr: 0,
@@ -251,7 +347,37 @@ const teamData = [
   },
 ];
 
+export const loader = async () => {
+  await new Promise((resolve) => setTimeout(resolve, 1500));
+
+  const url = "https://esportapi1.p.rapidapi.com/api/esport/matches/23/3/2024";
+  const options = {
+    method: "GET",
+    headers: {
+      "X-RapidAPI-Key": "c55757d6c1msh941414ee72cb6a5p125c81jsn87f09fdb9183",
+      "X-RapidAPI-Host": "esportapi1.p.rapidapi.com",
+    },
+  };
+
+  try {
+    const response = await fetch(url, options);
+    const result = await response.json();
+    const pglMajorMatches = result.events.filter(
+      (event: { tournament: { name: string } }) => {
+        return event.tournament.name === "PGL Major Elimination Stage";
+      }
+    );
+    //console.log(pglMajorMatches);
+
+    return pglMajorMatches;
+  } catch (error) {
+    console.error(error);
+    return error;
+  }
+};
+
 export default function Index() {
+  const matches = useLoaderData<typeof loader>();
   return (
     <div className="max-w-2xl m-auto">
       <div className="pt-4 pb-4 pl-2 pr-2">
@@ -263,6 +389,9 @@ export default function Index() {
         </h3>
         <div className="w-max m-auto mt-2">
           <Badge icon={RiVerifiedBadgeFill}>Day 1</Badge>
+          <Badge icon={RiVerifiedBadgeFill} className="opacity-50 grayscale">
+            Day 2
+          </Badge>
         </div>
         <div className="mb-4">
           <ResponsiveContainer width="99%" height={360}>
@@ -324,6 +453,11 @@ export default function Index() {
             </LineChart>
           </ResponsiveContainer>
         </div>
+        <Suspense fallback={<div>Loading...!!!!!!!</div>}>
+          <Await resolve={matches}>
+            <Matches />
+          </Await>
+        </Suspense>
         <Divider>Team Picks</Divider>
         <BarList showAnimation={true} data={teamData} />
       </div>
