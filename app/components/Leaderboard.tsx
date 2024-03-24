@@ -178,8 +178,8 @@ export default function Leaderboard({ data }: { data: any[] }) {
           <span className="font-medium text-tremor-content-strong dark:text-dark-tremor-content-strong">
             {data[data.length - 1].jontrooper * 0.1}pts
           </span>
-          <BadgeDelta deltaType="unchanged" isIncreasePositive={true}>
-            0
+          <BadgeDelta deltaType="moderateIncrease" isIncreasePositive={true}>
+            2
           </BadgeDelta>
         </div>
       </Card>
