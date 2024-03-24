@@ -39,36 +39,6 @@ export default function Leaderboard({ data }: { data: any[] }) {
             2
           </span>
           <img
-            src="img/avatars/bill.png"
-            width={34}
-            className="mr-1 rounded-full"
-          />
-          <p className="text-tremor-content-strong dark:text-dark-tremor-content-strong font-medium">
-            Bill
-          </p>
-        </div>
-        <SparkAreaChart
-          data={data}
-          categories={["bill"]}
-          index={"name"}
-          colors={["#7d8174"]}
-          className="pr-4 ml-auto h-8 w-20 sm:h-10 sm:w-36 opacity-50"
-        />
-        <div className="flex items-center space-x-2.5">
-          <span className="font-medium text-tremor-content-strong dark:text-dark-tremor-content-strong">
-            {data[data.length - 1].bill * 0.1}pts
-          </span>
-          <BadgeDelta deltaType="moderateIncrease" isIncreasePositive={true}>
-            2
-          </BadgeDelta>
-        </div>
-      </Card>
-      <Card className="mx-auto flex max-w-lg items-center justify-between px-4 py-1 my-2 dark:bg-neutral-950 hover:dark:bg-neutral-900 transition-all">
-        <div className="flex items-center space-x-2.5">
-          <span className="text-tremor-content dark:text-dark-tremor-content w-0 pr-8">
-            3
-          </span>
-          <img
             src="img/avatars/b0sskit.png"
             width={34}
             className="mr-1 rounded-full"
@@ -89,14 +59,14 @@ export default function Leaderboard({ data }: { data: any[] }) {
             {data[data.length - 1].b0sskit * 0.1}pts
           </span>
           <BadgeDelta deltaType="increase" isIncreasePositive={true}>
-            4
+            6
           </BadgeDelta>
         </div>
       </Card>
       <Card className="mx-auto flex max-w-lg items-center justify-between px-4 py-1 my-2 dark:bg-neutral-950 hover:dark:bg-neutral-900 transition-all">
         <div className="flex items-center space-x-2.5">
           <span className="text-tremor-content dark:text-dark-tremor-content w-0 pr-8">
-            4
+            3
           </span>
           <img
             src="img/avatars/rabbit.png"
@@ -117,6 +87,36 @@ export default function Leaderboard({ data }: { data: any[] }) {
         <div className="flex items-center space-x-2.5">
           <span className="font-medium text-tremor-content-strong dark:text-dark-tremor-content-strong">
             {data[data.length - 1].rabbit * 0.1}pts
+          </span>
+          <BadgeDelta deltaType="increase" isIncreasePositive={true}>
+            4
+          </BadgeDelta>
+        </div>
+      </Card>
+      <Card className="mx-auto flex max-w-lg items-center justify-between px-4 py-1 my-2 dark:bg-neutral-950 hover:dark:bg-neutral-900 transition-all">
+        <div className="flex items-center space-x-2.5">
+          <span className="text-tremor-content dark:text-dark-tremor-content w-0 pr-8">
+            4
+          </span>
+          <img
+            src="img/avatars/bill.png"
+            width={34}
+            className="mr-1 rounded-full"
+          />
+          <p className="text-tremor-content-strong dark:text-dark-tremor-content-strong font-medium">
+            Bill
+          </p>
+        </div>
+        <SparkAreaChart
+          data={data}
+          categories={["bill"]}
+          index={"name"}
+          colors={["#7d8174"]}
+          className="pr-4 ml-auto h-8 w-20 sm:h-10 sm:w-36 opacity-50"
+        />
+        <div className="flex items-center space-x-2.5">
+          <span className="font-medium text-tremor-content-strong dark:text-dark-tremor-content-strong">
+            {data[data.length - 1].bill * 0.1}pts
           </span>
           <BadgeDelta deltaType="moderateIncrease" isIncreasePositive={true}>
             2

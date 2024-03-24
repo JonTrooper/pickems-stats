@@ -41,10 +41,10 @@ export default function Navbar({ data, day }: { data: any[]; day: string }) {
         </Link>
         <Link to={"/day3"}>
           <Badge
-            icon={RiVerifiedBadgeLine}
+            icon={RiVerifiedBadgeFill}
             className={`${
               day === "Day 3" ? "opacity-100" : "opacity-60"
-            } hover:opacity-100 transition-opacity grayscale`}
+            } hover:opacity-100 transition-opacity`}
           >
             Day 3
           </Badge>
