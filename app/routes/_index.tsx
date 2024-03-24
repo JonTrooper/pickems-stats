@@ -173,6 +173,16 @@ const scoreTotal = [
     lils: 110,
     jontrooper: 120,
   },
+  {
+    name: "Match 16",
+    tttslr: 170,
+    bill: 150,
+    rabbit: 160,
+    b0sskit: 170,
+    ujei: 140,
+    lils: 110,
+    jontrooper: 140,
+  },
 ];
 
 const scoreByDay = [
@@ -200,11 +210,11 @@ const scoreByDay = [
     name: "Day 3",
     tttslr: 17,
     Bill: 15,
-    rabbit: 14,
-    B0sskit: 15,
+    rabbit: 16,
+    B0sskit: 17,
     ujei: 14,
     Lils: 11,
-    JonTrooper: 12,
+    JonTrooper: 14,
   },
 ];
 
@@ -349,7 +359,7 @@ export default function Index() {
       <Leaderboard data={scoreTotal} />
       <Divider>Cumulative Score by Day</Divider>
       <BarChart
-        className="mt-6"
+        className="pr-6"
         data={scoreByDay}
         index="name"
         categories={[
