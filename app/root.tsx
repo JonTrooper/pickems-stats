@@ -6,12 +6,34 @@ import {
   ScrollRestoration,
 } from "@remix-run/react";
 
-import type { LinksFunction } from "@remix-run/node";
+import type { LinksFunction, MetaFunction } from "@remix-run/node";
 import stylesheet from "~/tailwind.css?url";
 
 export const links: LinksFunction = () => [
   { rel: "stylesheet", href: stylesheet },
 ];
+
+export const meta: MetaFunction = () => {
+  return [
+    { title: "2024 Pick'Ems Tournament 🏆" },
+    {
+      name: "description",
+      content: "CS2 Copenhagen 2024 PickEms Tournament Stats",
+    },
+    {
+      property: "og:title",
+      content: "2024 Pick'Ems Tournament",
+    },
+    {
+      property: "og:image",
+      content: "https://pickems-tournament.vercel.app/img/stats_preview.png",
+    },
+    {
+      property: "og:description",
+      content: "CS2: Copenhagen Major 2024 - PickEms Tournament Stats",
+    },
+  ];
+};
 
 export function Layout({ children }: { children: React.ReactNode }) {
   return (

@@ -1,34 +1,15 @@
-import type { MetaFunction } from "@remix-run/node";
-import { Await, useLoaderData } from "@remix-run/react";
-import { RiVerifiedBadgeFill } from "@remixicon/react";
-import { Badge, BarList, Divider } from "@tremor/react";
-import { Suspense } from "react";
-import { Legend, Line, LineChart, ResponsiveContainer } from "recharts";
-import Matches from "~/components/Matches";
+import {
+  BadgeDelta,
+  BarChart,
+  BarList,
+  Card,
+  Divider,
+  SparkAreaChart,
+} from "@tremor/react";
+import Leaderboard from "~/components/Leaderboard";
+import Navbar from "~/components/Navbar";
 
-export const meta: MetaFunction = () => {
-  return [
-    { title: "2024 Pick'Ems Tournament 🏆" },
-    {
-      name: "description",
-      content: "CS2 Copenhagen 2024 PickEms Tournament Stats",
-    },
-    {
-      property: "og:title",
-      content: "2024 Pick'Ems Tournament",
-    },
-    {
-      property: "og:image",
-      content: "https://pickems-tournament.vercel.app/img/stats_preview.png",
-    },
-    {
-      property: "og:description",
-      content: "CS2: Copenhagen Major 2024 - PickEms Tournament Stats",
-    },
-  ];
-};
-
-const score = [
+const scoreTotal = [
   {
     name: "Start",
     tttslr: 0,
@@ -119,102 +100,112 @@ const score = [
     lils: 70,
     jontrooper: 60,
   },
-];
-
-const scoreTwo = [
   {
-    name: "Start",
-    tttslr: 0,
-    bill: 0,
-    rabbit: 0,
-    b0sskit: 0,
-    ujei: 0,
-    lils: 0,
-    jontrooper: 0,
-  },
-  {
-    name: "Match 1",
-    tttslr: 20,
-    bill: 20,
-    rabbit: 20,
-    b0sskit: 20,
-    ujei: 20,
-    lils: 0,
-    jontrooper: 0,
-  },
-  {
-    name: "Match 2",
-    tttslr: 20,
-    bill: 40,
-    rabbit: 40,
-    b0sskit: 20,
-    ujei: 20,
-    lils: 20,
-    jontrooper: 20,
-  },
-  {
-    name: "Match 3",
-    tttslr: 20,
-    bill: 40,
-    rabbit: 40,
-    b0sskit: 20,
-    ujei: 20,
-    lils: 30,
-    jontrooper: 20,
-  },
-  {
-    name: "Match 4",
-    tttslr: 20,
-    bill: 40,
-    rabbit: 50,
-    b0sskit: 20,
-    ujei: 30,
-    lils: 40,
-    jontrooper: 20,
-  },
-  {
-    name: "Match 5",
-    tttslr: 20,
-    bill: 40,
-    rabbit: 50,
-    b0sskit: 20,
-    ujei: 30,
-    lils: 50,
-    jontrooper: 30,
-  },
-  {
-    name: "Match 6",
-    tttslr: 30,
-    bill: 50,
+    name: "Match 9",
+    tttslr: 70,
+    bill: 90,
     rabbit: 60,
     b0sskit: 30,
-    ujei: 40,
-    lils: 50,
-    jontrooper: 40,
+    ujei: 60,
+    lils: 90,
+    jontrooper: 80,
   },
   {
-    name: "Match 7",
-    tttslr: 50,
-    bill: 70,
+    name: "Match 10",
+    tttslr: 90,
+    bill: 110,
     rabbit: 60,
-    b0sskit: 30,
-    ujei: 40,
-    lils: 50,
-    jontrooper: 40,
+    b0sskit: 50,
+    ujei: 80,
+    lils: 90,
+    jontrooper: 80,
   },
   {
-    name: "Match 8",
-    tttslr: 50,
-    bill: 70,
-    rabbit: 60,
-    b0sskit: 30,
-    ujei: 40,
-    lils: 70,
-    jontrooper: 60,
+    name: "Match 11",
+    tttslr: 90,
+    bill: 110,
+    rabbit: 80,
+    b0sskit: 70,
+    ujei: 80,
+    lils: 90,
+    jontrooper: 100,
+  },
+  {
+    name: "Match 12",
+    tttslr: 110,
+    bill: 110,
+    rabbit: 100,
+    b0sskit: 70,
+    ujei: 80,
+    lils: 90,
+    jontrooper: 100,
+  },
+  {
+    name: "Match 13",
+    tttslr: 130,
+    bill: 110,
+    rabbit: 100,
+    b0sskit: 90,
+    ujei: 100,
+    lils: 90,
+    jontrooper: 120,
+  },
+  {
+    name: "Match 14",
+    tttslr: 130,
+    bill: 130,
+    rabbit: 120,
+    b0sskit: 110,
+    ujei: 120,
+    lils: 90,
+    jontrooper: 120,
+  },
+  {
+    name: "Match 14",
+    tttslr: 150,
+    bill: 130,
+    rabbit: 120,
+    b0sskit: 130,
+    ujei: 120,
+    lils: 90,
+    jontrooper: 120,
   },
 ];
 
-const teamData = [
+const scoreByDay = [
+  {
+    name: "Day 1",
+    tttslr: 5,
+    Bill: 7,
+    rabbit: 6,
+    B0sskit: 3,
+    ujei: 4,
+    Lils: 7,
+    JonTrooper: 6,
+  },
+  {
+    name: "Day 2",
+    tttslr: 13,
+    Bill: 13,
+    rabbit: 12,
+    B0sskit: 11,
+    ujei: 12,
+    Lils: 9,
+    JonTrooper: 12,
+  },
+  {
+    name: "Day 3",
+    tttslr: 15,
+    Bill: 13,
+    rabbit: 12,
+    B0sskit: 13,
+    ujei: 12,
+    Lils: 9,
+    JonTrooper: 12,
+  },
+];
+
+const teamDataTotal = [
   {
     name: "MOUZ",
     value: 6,
@@ -347,120 +338,41 @@ const teamData = [
   },
 ];
 
-export const loader = async () => {
-  await new Promise((resolve) => setTimeout(resolve, 1500));
-
-  const url = "https://esportapi1.p.rapidapi.com/api/esport/matches/23/3/2024";
-  const options = {
-    method: "GET",
-    headers: {
-      "X-RapidAPI-Key": "c55757d6c1msh941414ee72cb6a5p125c81jsn87f09fdb9183",
-      "X-RapidAPI-Host": "esportapi1.p.rapidapi.com",
-    },
-  };
-
-  try {
-    const response = await fetch(url, options);
-    const result = await response.json();
-    const pglMajorMatches = result.events.filter(
-      (event: { tournament: { name: string } }) => {
-        return event.tournament.name === "PGL Major Elimination Stage";
-      }
-    );
-    //console.log(pglMajorMatches);
-
-    return pglMajorMatches;
-  } catch (error) {
-    console.error(error);
-    return error;
-  }
-};
-
 export default function Index() {
-  const matches = useLoaderData<typeof loader>();
   return (
-    <div className="max-w-2xl m-auto">
-      <div className="pt-4 pb-4 pl-2 pr-2">
-        <h1 className="m-auto w-max font-medium drop-shadow-md md:text-3xl sm:text-2xl text-xl">
-          🏆 CS2 Copenhagen 2024 Pick'Em Stats 📊
-        </h1>
-        <h3 className="m-auto w-max font-medium drop-shadow-md">
-          Winner Takes All
-        </h3>
-        <div className="w-max m-auto mt-2">
-          <Badge icon={RiVerifiedBadgeFill}>Day 1</Badge>
-          <Badge icon={RiVerifiedBadgeFill} className="opacity-50 grayscale">
-            Day 2
-          </Badge>
-        </div>
-        <div className="mb-4">
-          <ResponsiveContainer width="99%" height={360}>
-            <LineChart width={600} height={400} data={score}>
-              <Line
-                type="basis"
-                dataKey="tttslr"
-                stroke="#ffffff"
-                strokeWidth={3}
-                dot={false}
-              />
-              <Line
-                name="Bill"
-                type="basis"
-                dataKey="bill"
-                stroke="#7d8174"
-                strokeWidth={3}
-                dot={false}
-              />
-              <Line
-                type="basis"
-                dataKey="rabbit"
-                stroke="#2ecc71"
-                strokeWidth={3}
-                dot={false}
-              />
-              <Line
-                name="B0sskit"
-                type="basis"
-                dataKey="b0sskit"
-                stroke="#e2be74"
-                strokeWidth={3}
-                dot={false}
-              />
-              <Line
-                type="basis"
-                dataKey="ujei"
-                stroke="#9ed1e1"
-                strokeWidth={3}
-                dot={false}
-              />
-              <Line
-                name="Lils"
-                type="basis"
-                dataKey="lils"
-                stroke="#8a7b64"
-                strokeWidth={3}
-                dot={false}
-              />
-              <Line
-                name="JonTrooper"
-                type="basis"
-                dataKey="jontrooper"
-                stroke="#fee5b9"
-                strokeWidth={3}
-                dot={false}
-              />
-              <Legend />
-            </LineChart>
-          </ResponsiveContainer>
-        </div>
-        <Suspense fallback={<div>Loading...!!!!!!!</div>}>
-          <Await resolve={matches}>
-            <Matches />
-          </Await>
-        </Suspense>
-        <Divider>Team Picks</Divider>
-        <BarList showAnimation={true} data={teamData} />
-      </div>
+    <div className="max-w-2xl m-auto p-2">
+      <Navbar data={scoreTotal} day={"total"} />
+      <Divider>Leaderboard</Divider>
+      <Leaderboard data={scoreTotal} />
+      <Divider>Cumulative Score by Day</Divider>
+      <BarChart
+        className="mt-6"
+        data={scoreByDay}
+        index="name"
+        categories={[
+          "tttslr",
+          "Bill",
+          "rabbit",
+          "B0sskit",
+          "ujei",
+          "Lils",
+          "JonTrooper",
+        ]}
+        colors={[
+          "neutral-50",
+          "#7d8174",
+          "#2ecc71",
+          "#e2be74",
+          "#9ed1e1",
+          "#8a7b64",
+          "#fee5b9",
+        ]}
+        yAxisWidth={48}
+        showAnimation={true}
+      />
+
+      {/* <Divider>Day 1 Team Picks</Divider>
+      <BarList data={teamDataTotal} /> */}
     </div>
   );
 }
