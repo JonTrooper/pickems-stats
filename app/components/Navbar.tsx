@@ -9,7 +9,7 @@ import { Legend, Line, LineChart, ResponsiveContainer } from "recharts";
 
 export default function Navbar({ data, day }: { data: any[]; day: string }) {
   return (
-    <div className="pt-4 pb-4 px-2">
+    <div className="pt-4 px-2">
       <Link to={"/"}>
         <h1 className="m-auto w-max font-medium drop-shadow-md md:text-3xl sm:text-2xl text-xl">
           🏆 CS2 Copenhagen 2024 Pick'Em Stats 📊
@@ -60,7 +60,7 @@ export default function Navbar({ data, day }: { data: any[]; day: string }) {
           </Badge>
         </Link>
       </div>
-      <div className="mb-4">
+      <div>
         <ResponsiveContainer width="99%" height={320}>
           <LineChart width={600} height={400} data={data}>
             <Line

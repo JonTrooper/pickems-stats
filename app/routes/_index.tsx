@@ -382,6 +382,7 @@ export default function Index() {
         ]}
         yAxisWidth={48}
         showAnimation={true}
+        showLegend={false}
       />
 
       <Divider>Total Team Picks</Divider>
