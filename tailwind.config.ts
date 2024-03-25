@@ -10,7 +10,7 @@ export default {
   ],
   theme: {
     fontFamily: {
-      sans: ["stratum2", "sans-serif"],
+      sans: ["Inter", "sans-serif"],
     },
     transparent: "transparent",
     current: "currentColor",
@@ -101,6 +101,14 @@ export default {
         "tremor-default": ["0.875rem", { lineHeight: "1.25rem" }],
         "tremor-title": ["1.125rem", { lineHeight: "1.75rem" }],
         "tremor-metric": ["1.875rem", { lineHeight: "2.25rem" }],
+      },
+      animation: {
+        'gradient': 'gradient 7s linear infinite',
+      },
+      keyframes: {
+        'gradient': {
+          to: { 'background-position': '200% center' },
+        },
       },
     },
   },
