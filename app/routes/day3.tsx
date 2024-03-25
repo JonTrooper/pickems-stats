@@ -182,201 +182,211 @@ export default function Day3() {
     <div className="max-w-2xl m-auto p-2">
       <Navbar data={scoreThree} day={"Day 3"} />
 
-      <Card className="mx-auto flex max-w-lg items-center justify-between px-4 py-1 my-2 dark:bg-neutral-950 hover:dark:bg-neutral-900 transition-all">
-        <div className="flex items-center space-x-2.5">
-          <img
-            src="img/avatars/tttslr.png"
-            width={34}
-            className="mr-1 rounded-full"
-          />
-          <p className="text-tremor-content-strong dark:text-dark-tremor-content-strong font-medium">
-            tttslr
-          </p>
-        </div>
-
-        <div className="flex items-center space-x-2.5 mr-2">
-          <img src="img/faze.png" width={38} alt="" className="mr-2" />
-          <img src="img/g2.png" width={35} alt="" className="mr-2" />
-          <img
-            src="img/pain.png"
-            width={42}
-            alt=""
-            className="mr-2 grayscale opacity-60"
-          />
-        </div>
-        <BadgeDelta deltaType="increase" isIncreasePositive={true}>
-          4
-        </BadgeDelta>
-      </Card>
-      <Card className="mx-auto flex max-w-lg items-center justify-between px-4 py-1 my-2 dark:bg-neutral-950 hover:dark:bg-neutral-900 transition-all">
-        <div className="flex items-center space-x-2.5">
-          <img
-            src="img/avatars/bill.png"
-            width={34}
-            className="mr-1 rounded-full"
-          />
-          <p className="text-tremor-content-strong dark:text-dark-tremor-content-strong font-medium">
-            Bill
-          </p>
-        </div>
-
-        <div className="flex items-center space-x-2.5">
-          <img
-            src="img/comp.png"
-            width={38}
-            alt=""
-            className="mr-2 grayscale opacity-60"
-          />
-          <img src="img/g2.png" width={35} alt="" className="mr-2" />
-          <img
-            src="img/pain.png"
-            width={42}
-            alt=""
-            className="mr-2 grayscale opacity-60"
-          />
-        </div>
-        <BadgeDelta deltaType="moderateIncrease" isIncreasePositive={true}>
-          2
-        </BadgeDelta>
-      </Card>
-      <Card className="mx-auto flex max-w-lg items-center justify-between px-4 py-1 my-2 dark:bg-neutral-950 hover:dark:bg-neutral-900 transition-all">
-        <div className="flex items-center space-x-2.5">
-          <img
-            src="img/avatars/rabbit.png"
-            width={34}
-            className="mr-1 rounded-full"
-          />
-          <p className="text-tremor-content-strong dark:text-dark-tremor-content-strong font-medium">
-            rabbit
-          </p>
-        </div>
-
-        <div className="flex items-center space-x-2.5 mr-4">
-          <img
-            src="img/comp.png"
-            width={38}
-            alt=""
-            className="mr-2 grayscale opacity-60"
-          />
-          <img src="img/g2.png" width={35} alt="" className="mr-2" />
-          <img src="img/navi.png" width={42} alt="" className="mr-2" />
-        </div>
-        <BadgeDelta deltaType="increase" isIncreasePositive={true}>
-          4
-        </BadgeDelta>
-      </Card>
-      <Card className="mx-auto flex max-w-lg items-center justify-between px-4 py-1 my-2 dark:bg-neutral-950 hover:dark:bg-neutral-900 transition-all">
-        <div className="flex items-center space-x-2.5">
-          <img
-            src="img/avatars/b0sskit.png"
-            width={34}
-            className="mr-1 rounded-full"
-          />
-          <p className="text-tremor-content-strong dark:text-dark-tremor-content-strong font-medium">
-            B0sskit
-          </p>
-        </div>
-
-        <div className="flex items-center space-x-2.5 mr-6">
-          <img src="img/faze.png" width={38} alt="" className="mr-2" />
-          <img src="img/g2.png" width={35} alt="" className="mr-2" />
-          <img src="img/navi.png" width={42} alt="" className="mr-2" />
-        </div>
-        <BadgeDelta deltaType="increase" isIncreasePositive={true}>
-          6
-        </BadgeDelta>
-      </Card>
-      <Card className="mx-auto flex max-w-lg items-center justify-between px-4 py-1 my-2 dark:bg-neutral-950 hover:dark:bg-neutral-900 transition-all">
-        <div className="flex items-center space-x-2.5">
-          <img
-            src="img/avatars/ujei.png"
-            width={34}
-            className="mr-1 rounded-full"
-          />
-          <p className="text-tremor-content-strong dark:text-dark-tremor-content-strong font-medium">
-            ujei
-          </p>
-        </div>
-
-        <div className="flex items-center space-x-2.5">
-          <img
-            src="img/comp.png"
-            width={38}
-            alt=""
-            className="mr-2 grayscale opacity-60"
-          />
-          <img src="img/g2.png" width={35} alt="" className="mr-2" />
-          <img
-            src="img/pain.png"
-            width={42}
-            alt=""
-            className="mr-2 grayscale opacity-60"
-          />
-        </div>
-        <BadgeDelta deltaType="moderateIncrease" isIncreasePositive={true}>
-          2
-        </BadgeDelta>
-      </Card>
-      <Card className="mx-auto flex max-w-lg items-center justify-between px-4 py-1 my-2 dark:bg-neutral-950 hover:dark:bg-neutral-900 transition-all">
-        <div className="flex items-center space-x-2.5">
-          <img
-            src="img/avatars/lils.png"
-            width={34}
-            className="mr-1 rounded-full"
-          />
-          <p className="text-tremor-content-strong dark:text-dark-tremor-content-strong font-medium">
-            Lils
-          </p>
-        </div>
-        <div className="flex items-center space-x-2.5">
-          <img
-            src="img/comp.png"
-            width={38}
-            alt=""
-            className="mr-2 grayscale opacity-60"
-          />
-          <img src="img/g2.png" width={35} alt="" className="mr-2" />
-          <img
-            src="img/pain.png"
-            width={42}
-            alt=""
-            className="mr-2 grayscale opacity-60"
-          />
-        </div>
-        <BadgeDelta deltaType="moderateIncrease" isIncreasePositive={true}>
-          2
-        </BadgeDelta>
-      </Card>
-      <Card className="mx-auto flex max-w-lg items-center justify-between px-4 py-1 my-2 dark:bg-neutral-950 hover:dark:bg-neutral-900 transition-all">
-        <div className="flex items-center space-x-2.5">
-          <img
-            src="img/avatars/jontrooper.png"
-            width={34}
-            className="mr-1 rounded-full"
-          />
-          <p className="text-tremor-content-strong dark:text-dark-tremor-content-strong font-medium">
-            JonTrooper
-          </p>
-        </div>
-        <div className="flex items-center space-x-2.5 mr-12">
-          <img
-            src="img/comp.png"
-            width={38}
-            alt=""
-            className="mr-2 grayscale opacity-60"
-          />
-          <img
-            src="img/vp.png"
-            width={35}
-            alt=""
-            className="mr-2 grayscale opacity-60"
-          />
-          <img src="img/navi.png" width={42} alt="" className="mr-2" />
-        </div>
-        <BadgeDelta deltaType="moderateIncrease" isIncreasePositive={true}>
-          2
-        </BadgeDelta>
-      </Card>
+      <div className="max-w-sm m-auto">
+        <Card className="mx-auto flex max-w-lg items-center justify-between px-1 py-1 dark:bg-neutral-950 hover:dark:bg-neutral-900 transition-all">
+          <div className="flex items-center space-x-2.5">
+            <img
+              src="img/avatars/tttslr.png"
+              width={34}
+              className="mr-1 rounded-full"
+            />
+            <p className="text-tremor-content-strong dark:text-dark-tremor-content-strong font-medium">
+              tttslr
+            </p>
+          </div>
+          <div className="flex items-center space-x-1">
+            <img
+              src="img/x32/faze.png"
+              width={32}
+              className="bg-green-900 p-1 rounded-md border border-green-700"
+            />
+            <img
+              src="img/x32/g2.png"
+              width={32}
+              className="mr-2 bg-green-900 p-1 rounded-md border border-green-700"
+            />
+            <img
+              src="img/x32/pain.png"
+              width={32}
+              className="mr-2 bg-red-900 p-1 rounded-md border border-red-700"
+            />
+          </div>
+        </Card>
+        <Card className="mx-auto flex max-w-lg items-center justify-between px-1 py-1 dark:bg-neutral-950 hover:dark:bg-neutral-900 transition-all my-1.5">
+          <div className="flex items-center space-x-2.5">
+            <img
+              src="img/avatars/bill.png"
+              width={34}
+              className="mr-1 rounded-full"
+            />
+            <p className="text-tremor-content-strong dark:text-dark-tremor-content-strong font-medium">
+              Bill
+            </p>
+          </div>
+          <div className="flex items-center space-x-1">
+            <img
+              src="img/x32/comp.png"
+              width={32}
+              className="bg-red-900 p-1 rounded-md border border-red-700"
+            />
+            <img
+              src="img/x32/g2.png"
+              width={32}
+              className="mr-2 bg-green-900 p-1 rounded-md border border-green-700"
+            />
+            <img
+              src="img/x32/pain.png"
+              width={32}
+              className="mr-2 bg-red-900 p-1 rounded-md border border-red-700"
+            />
+          </div>
+        </Card>
+        <Card className="mx-auto flex max-w-lg items-center justify-between px-1 py-1 dark:bg-neutral-950 hover:dark:bg-neutral-900 transition-all my-1.5">
+          <div className="flex items-center space-x-2.5">
+            <img
+              src="img/avatars/rabbit.png"
+              width={34}
+              className="mr-1 rounded-full"
+            />
+            <p className="text-tremor-content-strong dark:text-dark-tremor-content-strong font-medium">
+              rabbit
+            </p>
+          </div>
+          <div className="flex items-center space-x-1">
+            <img
+              src="img/x32/comp.png"
+              width={32}
+              className="bg-red-900 p-1 rounded-md border border-red-700"
+            />
+            <img
+              src="img/x32/g2.png"
+              width={32}
+              className="mr-2 bg-green-900 p-1 rounded-md border border-green-700"
+            />
+            <img
+              src="img/x32/navi.png"
+              width={32}
+              className="mr-2 bg-green-900 p-1 rounded-md border border-green-700"
+            />
+          </div>
+        </Card>
+        <Card className="mx-auto flex max-w-lg items-center justify-between px-1 py-1 dark:bg-neutral-950 hover:dark:bg-neutral-900 transition-all my-1.5">
+          <div className="flex items-center space-x-2.5">
+            <img
+              src="img/avatars/b0sskit.png"
+              width={34}
+              className="mr-1 rounded-full"
+            />
+            <p className="text-tremor-content-strong dark:text-dark-tremor-content-strong font-medium">
+              B0sskit
+            </p>
+          </div>
+          <div className="flex items-center space-x-1">
+            <img
+              src="img/x32/faze.png"
+              width={32}
+              className="bg-green-900 p-1 rounded-md border border-green-700"
+            />
+            <img
+              src="img/x32/g2.png"
+              width={32}
+              className="mr-2 bg-green-900 p-1 rounded-md border border-green-700"
+            />
+            <img
+              src="img/x32/navi.png"
+              width={32}
+              className="mr-2 bg-green-900 p-1 rounded-md border border-green-700"
+            />
+          </div>
+        </Card>
+        <Card className="mx-auto flex max-w-lg items-center justify-between px-1 py-1 dark:bg-neutral-950 hover:dark:bg-neutral-900 transition-all my-1.5">
+          <div className="flex items-center space-x-2.5">
+            <img
+              src="img/avatars/ujei.png"
+              width={34}
+              className="mr-1 rounded-full"
+            />
+            <p className="text-tremor-content-strong dark:text-dark-tremor-content-strong font-medium">
+              ujei
+            </p>
+          </div>
+          <div className="flex items-center space-x-1">
+            <img
+              src="img/x32/comp.png"
+              width={32}
+              className="bg-red-900 p-1 rounded-md border border-red-700"
+            />
+            <img
+              src="img/x32/g2.png"
+              width={32}
+              className="mr-2 bg-green-900 p-1 rounded-md border border-green-700"
+            />
+            <img
+              src="img/x32/pain.png"
+              width={32}
+              className="mr-2 bg-red-900 p-1 rounded-md border border-red-700"
+            />
+          </div>
+        </Card>
+        <Card className="mx-auto flex max-w-lg items-center justify-between px-1 py-1 dark:bg-neutral-950 hover:dark:bg-neutral-900 transition-all my-1.5">
+          <div className="flex items-center space-x-2.5">
+            <img
+              src="img/avatars/lils.png"
+              width={34}
+              className="mr-1 rounded-full"
+            />
+            <p className="text-tremor-content-strong dark:text-dark-tremor-content-strong font-medium">
+              Lils
+            </p>
+          </div>
+          <div className="flex items-center space-x-1">
+            <img
+              src="img/x32/comp.png"
+              width={32}
+              className="bg-red-900 p-1 rounded-md border border-red-700"
+            />
+            <img
+              src="img/x32/g2.png"
+              width={32}
+              className="mr-2 bg-green-900 p-1 rounded-md border border-green-700"
+            />
+            <img
+              src="img/x32/pain.png"
+              width={32}
+              className="mr-2 bg-red-900 p-1 rounded-md border border-red-700"
+            />
+          </div>
+        </Card>
+        <Card className="mx-auto flex max-w-lg items-center justify-between px-1 py-1 dark:bg-neutral-950 hover:dark:bg-neutral-900 transition-all my-1.5">
+          <div className="flex items-center space-x-2.5">
+            <img
+              src="img/avatars/jontrooper.png"
+              width={34}
+              className="mr-1 rounded-full"
+            />
+            <p className="text-tremor-content-strong dark:text-dark-tremor-content-strong font-medium">
+              JonTrooper
+            </p>
+          </div>
+          <div className="flex items-center space-x-1">
+            <img
+              src="img/x32/comp.png"
+              width={32}
+              className="bg-red-900 p-1 rounded-md border border-red-700"
+            />
+            <img
+              src="img/x32/vp.png"
+              width={32}
+              className="mr-2 bg-red-900 p-1 rounded-md border border-red-700"
+            />
+            <img
+              src="img/x32/navi.png"
+              width={32}
+              className="mr-2 bg-green-900 p-1 rounded-md border border-green-700"
+            />
+          </div>
+        </Card>
+      </div>
     </div>
   );
 }
