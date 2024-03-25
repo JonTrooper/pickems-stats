@@ -1,5 +1,6 @@
 import type { Config } from "tailwindcss";
 import colors from 'tailwindcss/colors';
+import defaultTheme from "tailwindcss/defaultTheme";
 
 export default {
   content: [
@@ -9,12 +10,21 @@ export default {
     "./node_modules/@tremor/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    fontFamily: {
-      sans: ["Inter", "sans-serif"],
-    },
     transparent: "transparent",
     current: "currentColor",
     extend: {
+      fontFamily: {
+        sans: ["Inter var", ...defaultTheme.fontFamily.sans],
+      },
+      textColor: {
+        'bill': '#7d8174',
+        'rabbit': '#2ecc71',
+        'b0sskit': '#e2be74',
+        'ujei': '#9ed1e1',
+        'lils': '#8a7b64',
+        'jontrooper': '#fee5b9',
+
+      },
       colors: {
         // light mode
         tremor: {
