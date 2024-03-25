@@ -1,4 +1,4 @@
-import { BadgeDelta, Card, SparkAreaChart } from "@tremor/react";
+import { BadgeDelta, Card, Divider, SparkAreaChart } from "@tremor/react";
 import Navbar from "~/components/Navbar";
 
 const scoreThree = [
@@ -181,7 +181,7 @@ export default function Day3() {
   return (
     <div className="max-w-2xl m-auto p-2">
       <Navbar data={scoreThree} day={"Day 3"} />
-
+      <Divider>Day 3 Results</Divider>
       <div className="max-w-sm m-auto">
         <Card className="mx-auto flex max-w-lg items-center justify-between px-1 py-1 dark:bg-neutral-950 hover:dark:bg-neutral-900 transition-all">
           <div className="flex items-center space-x-2.5">
