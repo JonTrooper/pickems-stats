@@ -5,15 +5,7 @@ import {
   RiVerifiedBadgeLine,
 } from "@remixicon/react";
 import { Badge } from "@tremor/react";
-import {
-  Label,
-  LabelList,
-  Legend,
-  Line,
-  LineChart,
-  ResponsiveContainer,
-  Tooltip,
-} from "recharts";
+import { Legend, Line, LineChart, ResponsiveContainer } from "recharts";
 
 export default function Navbar({ data, day }: { data: any[]; day: string }) {
   return (
@@ -23,10 +15,10 @@ export default function Navbar({ data, day }: { data: any[]; day: string }) {
           🏆 CS2 Copenhagen 2024 Pick'Em Stats 📊
         </h1>
       </Link>
-      <h3 className="m-auto w-max font-medium drop-shadow-md">
+      <h3 className="m-auto w-max font-medium drop-shadow-md opacity-65">
         Winner Takes All
       </h3>
-      <div className="w-max m-auto my-2 flex gap-2">
+      <div className="w-max m-auto mt-1 flex gap-1">
         <Link to={"/day1"}>
           <Badge
             icon={RiVerifiedBadgeFill}
@@ -57,8 +49,42 @@ export default function Navbar({ data, day }: { data: any[]; day: string }) {
             Day 3
           </Badge>
         </Link>
+      </div>
+
+      <div className="w-max m-auto mt-1 flex gap-1">
         <Link to={"/"}>
           <Badge
+            icon={RiVerifiedBadgeLine}
+            className={`${
+              day === "Day 4" ? "opacity-100" : "opacity-60"
+            } hover:opacity-100 transition-opacity grayscale`}
+          >
+            Day 4
+          </Badge>
+        </Link>
+        <Link to={"/"}>
+          <Badge
+            icon={RiVerifiedBadgeLine}
+            className={`${
+              day === "Day 5" ? "opacity-100" : "opacity-60"
+            } hover:opacity-100 transition-opacity grayscale`}
+          >
+            Day 5
+          </Badge>
+        </Link>
+        <Link to={"/"}>
+          <Badge
+            icon={RiVerifiedBadgeLine}
+            className={`${
+              day === "Day 6" ? "opacity-100" : "opacity-60"
+            } hover:opacity-100 transition-opacity grayscale`}
+          >
+            Day 6
+          </Badge>
+        </Link>
+        <Link to={"/"}>
+          <Badge
+            color={"amber-300"}
             icon={RiMedalFill}
             className={`${
               day === "total" ? "opacity-100" : "opacity-60"
@@ -68,7 +94,8 @@ export default function Navbar({ data, day }: { data: any[]; day: string }) {
           </Badge>
         </Link>
       </div>
-      <div className="max-w-lg m-auto rounded-xl shadow-[0px_0px_0px_1px_rgba(0,0,0,0.06),0px_1px_1px_-0.5px_rgba(0,0,0,0.06),0px_3px_3px_-1.5px_rgba(0,0,0,0.06),_0px_6px_6px_-3px_rgba(0,0,0,0.06),0px_12px_12px_-6px_rgba(0,0,0,0.06),0px_24px_24px_-12px_rgba(0,0,0,0.06)] dark:bg-[#141414] p-1.5 border-neutral-800 border-t border-x border-b border-b-[#1b1b1b]">
+
+      <div>
         <ResponsiveContainer width="99%" height={320}>
           <LineChart width={600} height={400} data={data}>
             <Legend iconType="circle" iconSize={10} />

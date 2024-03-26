@@ -14,7 +14,7 @@ export default {
     current: "currentColor",
     extend: {
       fontFamily: {
-        sans: ["Inter var", ...defaultTheme.fontFamily.sans],
+        sans: ["Comic Sans MS", ...defaultTheme.fontFamily.sans],
       },
       textColor: {
         'bill': '#7d8174',

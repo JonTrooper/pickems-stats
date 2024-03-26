@@ -212,7 +212,7 @@ export default function Day2() {
     <div className="max-w-2xl m-auto p-2">
       <Navbar data={scoreTwo} day={"Day 2"} />
       <Divider>Day 2 Results</Divider>
-      <div className="max-w-md m-auto rounded-xl shadow-[0px_0px_0px_1px_rgba(0,0,0,0.06),0px_1px_1px_-0.5px_rgba(0,0,0,0.06),0px_3px_3px_-1.5px_rgba(0,0,0,0.06),_0px_6px_6px_-3px_rgba(0,0,0,0.06),0px_12px_12px_-6px_rgba(0,0,0,0.06),0px_24px_24px_-12px_rgba(0,0,0,0.06)] dark:bg-[#141414] p-1.5 border-neutral-800 border-t border-x border-b border-b-[#1b1b1b]">
+      <div>
         <Card className="mx-auto flex max-w-lg items-center justify-between px-1 py-1 dark:bg-neutral-950 hover:dark:bg-neutral-900 transition-all">
           <div className="flex items-center space-x-2.5">
             <img
