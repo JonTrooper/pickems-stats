@@ -4,8 +4,8 @@ import { Badge, BadgeDelta, Card, SparkAreaChart } from "@tremor/react";
 export default function Leaderboard({ data }: { data: any[] }) {
   const totalMatches = data.length - 1;
   return (
-    <div className="max-w-lg m-auto">
-      <Card className="mx-auto flex items-center justify-between px-1 py-1 dark:bg-neutral-950 hover:dark:bg-neutral-900 transition-all">
+    <div className="max-w-lg m-auto rounded-xl shadow-[0px_0px_0px_1px_rgba(0,0,0,0.06),0px_1px_1px_-0.5px_rgba(0,0,0,0.06),0px_3px_3px_-1.5px_rgba(0,0,0,0.06),_0px_6px_6px_-3px_rgba(0,0,0,0.06),0px_12px_12px_-6px_rgba(0,0,0,0.06),0px_24px_24px_-12px_rgba(0,0,0,0.06)] dark:bg-[#141414] p-1.5 border-neutral-800 border-t border-x border-b border-b-[#1b1b1b]">
+      <Card className="mx-auto flex items-center justify-between px-1 py-1 dark:bg-neutral-950 hover:dark:bg-[#0e0e0e] transition-all">
         <div className="flex items-center space-x-2.5">
           <img
             src="img/avatars/tttslr.png"
@@ -26,7 +26,7 @@ export default function Leaderboard({ data }: { data: any[] }) {
           </Badge>
         </div>
       </Card>
-      <Card className="mx-auto flex items-center justify-between px-1 py-1 my-1.5 dark:bg-neutral-950 hover:dark:bg-neutral-900 transition-all">
+      <Card className="mx-auto flex items-center justify-between px-1 py-1 my-1.5 dark:bg-neutral-950 hover:dark:bg-[#0e0e0e] transition-all">
         <div className="flex items-center space-x-2.5">
           <img
             src="img/avatars/b0sskit.png"
@@ -67,7 +67,7 @@ export default function Leaderboard({ data }: { data: any[] }) {
           </Badge>
         </div>
       </Card>
-      <Card className="mx-auto flex items-center justify-between px-1 py-1 my-1.5 dark:bg-neutral-950 hover:dark:bg-neutral-900 transition-all">
+      <Card className="mx-auto flex items-center justify-between px-1 py-1 my-1.5 dark:bg-neutral-950 hover:dark:bg-[#0e0e0e] transition-all">
         <div className="flex items-center space-x-2.5">
           <img
             src="img/avatars/rabbit.png"
@@ -88,7 +88,7 @@ export default function Leaderboard({ data }: { data: any[] }) {
           </Badge>
         </div>
       </Card>
-      <Card className="mx-auto flex items-center justify-between px-1 py-1 my-1.5 dark:bg-neutral-950 hover:dark:bg-neutral-900 transition-all">
+      <Card className="mx-auto flex items-center justify-between px-1 py-1 my-1.5 dark:bg-neutral-950 hover:dark:bg-[#0e0e0e] transition-all">
         <div className="flex items-center space-x-2.5">
           <img
             src="img/avatars/bill.png"
@@ -109,7 +109,7 @@ export default function Leaderboard({ data }: { data: any[] }) {
           </Badge>
         </div>
       </Card>
-      <Card className="mx-auto flex items-center justify-between px-1 py-1 my-1.5 dark:bg-neutral-950 hover:dark:bg-neutral-900 transition-all">
+      <Card className="mx-auto flex items-center justify-between px-1 py-1 my-1.5 dark:bg-neutral-950 hover:dark:bg-[#0e0e0e] transition-all">
         <div className="flex items-center space-x-2.5">
           <img
             src="img/avatars/ujei.png"
@@ -130,7 +130,7 @@ export default function Leaderboard({ data }: { data: any[] }) {
           </Badge>
         </div>
       </Card>
-      <Card className="mx-auto flex items-center justify-between px-1 py-1 my-1.5 dark:bg-neutral-950 hover:dark:bg-neutral-900 transition-all">
+      <Card className="mx-auto flex items-center justify-between px-1 py-1 my-1.5 dark:bg-neutral-950 hover:dark:bg-[#0e0e0e] transition-all">
         <div className="flex items-center space-x-2.5">
           <img
             src="img/avatars/jontrooper.png"
@@ -151,7 +151,7 @@ export default function Leaderboard({ data }: { data: any[] }) {
           </Badge>
         </div>
       </Card>
-      <Card className="mx-auto flex items-center justify-between px-1 py-1 my-1.5 dark:bg-neutral-950 hover:dark:bg-neutral-900 transition-all">
+      <Card className="mx-auto flex items-center justify-between px-1 py-1 dark:bg-neutral-950 hover:dark:bg-[#0e0e0e] transition-all">
         <div className="flex items-center space-x-2.5">
           <img
             src="img/avatars/lils.png"
