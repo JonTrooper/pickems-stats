@@ -5,11 +5,19 @@ import {
   RiVerifiedBadgeLine,
 } from "@remixicon/react";
 import { Badge } from "@tremor/react";
-import { Legend, Line, LineChart, ResponsiveContainer } from "recharts";
+import {
+  Label,
+  LabelList,
+  Legend,
+  Line,
+  LineChart,
+  ResponsiveContainer,
+  Tooltip,
+} from "recharts";
 
 export default function Navbar({ data, day }: { data: any[]; day: string }) {
   return (
-    <div className="pt-4 px-2">
+    <div className="pt-4">
       <Link to={"/"}>
         <h1 className="m-auto w-max font-medium drop-shadow-md md:text-3xl sm:text-2xl text-xl">
           🏆 CS2 Copenhagen 2024 Pick'Em Stats 📊
@@ -18,7 +26,7 @@ export default function Navbar({ data, day }: { data: any[]; day: string }) {
       <h3 className="m-auto w-max font-medium drop-shadow-md">
         Winner Takes All
       </h3>
-      <div className="w-max m-auto mt-2 flex gap-2">
+      <div className="w-max m-auto my-2 flex gap-2">
         <Link to={"/day1"}>
           <Badge
             icon={RiVerifiedBadgeFill}
@@ -60,9 +68,10 @@ export default function Navbar({ data, day }: { data: any[]; day: string }) {
           </Badge>
         </Link>
       </div>
-      <div>
+      <div className="max-w-lg m-auto rounded-xl shadow-[0px_0px_0px_1px_rgba(0,0,0,0.06),0px_1px_1px_-0.5px_rgba(0,0,0,0.06),0px_3px_3px_-1.5px_rgba(0,0,0,0.06),_0px_6px_6px_-3px_rgba(0,0,0,0.06),0px_12px_12px_-6px_rgba(0,0,0,0.06),0px_24px_24px_-12px_rgba(0,0,0,0.06)] dark:bg-[#141414] p-1.5 border-neutral-800 border-t border-x border-b border-b-[#1b1b1b]">
         <ResponsiveContainer width="99%" height={320}>
           <LineChart width={600} height={400} data={data}>
+            <Legend iconType="circle" iconSize={10} />
             <Line
               type="basis"
               dataKey="tttslr"
