@@ -212,7 +212,7 @@ export default function Day2() {
     <div className="max-w-2xl m-auto p-2">
       <Navbar data={scoreTwo} day={"Day 2"} />
       <Divider>Day 2 Results</Divider>
-      <div className="max-w-sm m-auto">
+      <div className="max-w-md m-auto rounded-xl shadow-[0px_0px_0px_1px_rgba(0,0,0,0.06),0px_1px_1px_-0.5px_rgba(0,0,0,0.06),0px_3px_3px_-1.5px_rgba(0,0,0,0.06),_0px_6px_6px_-3px_rgba(0,0,0,0.06),0px_12px_12px_-6px_rgba(0,0,0,0.06),0px_24px_24px_-12px_rgba(0,0,0,0.06)] dark:bg-[#141414] p-1.5 border-neutral-800 border-t border-x border-b border-b-[#1b1b1b]">
         <Card className="mx-auto flex max-w-lg items-center justify-between px-1 py-1 dark:bg-neutral-950 hover:dark:bg-neutral-900 transition-all">
           <div className="flex items-center space-x-2.5">
             <img
@@ -264,9 +264,7 @@ export default function Day2() {
               width={34}
               className="mr-1 rounded-full"
             />
-            <p className="text-tremor-content-strong dark:text-dark-tremor-content-strong font-medium">
-              Bill
-            </p>
+            <p className="text-bill font-medium">Bill</p>
           </div>
           <div className="flex items-center space-x-1">
             <img
@@ -308,9 +306,7 @@ export default function Day2() {
               width={34}
               className="mr-1 rounded-full"
             />
-            <p className="text-tremor-content-strong dark:text-dark-tremor-content-strong font-medium">
-              rabbit
-            </p>
+            <p className="text-rabbit font-medium">rabbit</p>
           </div>
           <div className="flex items-center space-x-1">
             <img
@@ -352,9 +348,7 @@ export default function Day2() {
               width={34}
               className="mr-1 rounded-full"
             />
-            <p className="text-tremor-content-strong dark:text-dark-tremor-content-strong font-medium">
-              B0sskit
-            </p>
+            <p className="text-b0sskit font-medium">B0sskit</p>
           </div>
           <div className="flex items-center space-x-1">
             <img
@@ -396,9 +390,7 @@ export default function Day2() {
               width={34}
               className="mr-1 rounded-full"
             />
-            <p className="text-tremor-content-strong dark:text-dark-tremor-content-strong font-medium">
-              ujei
-            </p>
+            <p className="text-ujei font-medium">ujei</p>
           </div>
           <div className="flex items-center space-x-1">
             <img
@@ -440,9 +432,7 @@ export default function Day2() {
               width={34}
               className="mr-1 rounded-full"
             />
-            <p className="text-tremor-content-strong dark:text-dark-tremor-content-strong font-medium">
-              Lils
-            </p>
+            <p className="text-lils font-medium">Lils</p>
           </div>
           <div className="flex items-center space-x-1">
             <img
@@ -477,16 +467,14 @@ export default function Day2() {
             />
           </div>
         </Card>
-        <Card className="mx-auto flex max-w-lg items-center justify-between px-1 py-1 dark:bg-neutral-950 hover:dark:bg-neutral-900 transition-all my-1.5">
+        <Card className="mx-auto flex max-w-lg items-center justify-between px-1 py-1 dark:bg-neutral-950 hover:dark:bg-neutral-900 transition-all">
           <div className="flex items-center space-x-2.5">
             <img
               src="img/avatars/jontrooper.png"
               width={34}
               className="mr-1 rounded-full"
             />
-            <p className="text-tremor-content-strong dark:text-dark-tremor-content-strong font-medium">
-              JonTrooper
-            </p>
+            <p className="text-jontrooper font-medium">JonTrooper</p>
           </div>
           <div className="flex items-center space-x-1">
             <img
