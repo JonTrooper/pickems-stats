@@ -47,7 +47,7 @@ export function Layout({ children }: { children: React.ReactNode }) {
       </head>
       <body>
         <svg
-          className="pointer-events-none fixed isolate z-50 opacity-40 mix-blend-soft-light"
+          className="pointer-events-none fixed isolate z-50 opacity-35 mix-blend-soft-light"
           width="100%"
           height="100%"
         >
