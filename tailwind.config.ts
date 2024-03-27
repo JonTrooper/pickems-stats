@@ -15,6 +15,8 @@ export default {
     extend: {
       fontFamily: {
         sans: ["Comic Sans MS", ...defaultTheme.fontFamily.sans],
+        inter: ["Inter vars", 'sans-serif'],
+        stratum2: ["Stratum2", 'sans-serif'],
       },
       textColor: {
         'bill': '#7d8174',
