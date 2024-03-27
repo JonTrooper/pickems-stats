@@ -59,17 +59,7 @@ export default function Navbar({ data, day }: { data: any[]; day: string }) {
               day === "Day 4" ? "opacity-100" : "opacity-60"
             } hover:opacity-100 transition-opacity grayscale`}
           >
-            Day 4
-          </Badge>
-        </Link>
-        <Link to={"/"}>
-          <Badge
-            icon={RiVerifiedBadgeLine}
-            className={`${
-              day === "Day 5" ? "opacity-100" : "opacity-60"
-            } hover:opacity-100 transition-opacity grayscale`}
-          >
-            Day 5
+            Day 4-5
           </Badge>
         </Link>
         <Link to={"/"}>
@@ -79,7 +69,7 @@ export default function Navbar({ data, day }: { data: any[]; day: string }) {
               day === "Day 6" ? "opacity-100" : "opacity-60"
             } hover:opacity-100 transition-opacity grayscale`}
           >
-            Day 6
+            Day 6-7
           </Badge>
         </Link>
         <Link to={"/"}>
