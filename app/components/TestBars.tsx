@@ -1,18 +1,11 @@
-import {
-  BarChart,
-  Bar,
-  XAxis,
-  YAxis,
-  ResponsiveContainer,
-  Tooltip,
-} from "recharts";
+import { BarChart, Bar, XAxis, YAxis, ResponsiveContainer } from "recharts";
 
 const data = [
   {
     name: "G2",
-    "Day 1": 5,
+    "Day 1": 6,
     "Day 2": 4,
-    "Day 3": 2,
+    "Day 3": 6,
     icon: "img/x32/g2.png",
     fill: "#582224",
   },
@@ -164,8 +157,8 @@ export default function TestBars() {
         layout="vertical"
         margin={{ top: 0, right: 20, left: 30, bottom: 10 }}
       >
-        <XAxis type="number" />
-        <YAxis type="category" dataKey="name" />
+        <XAxis type="number" fontSize={12} />
+        <YAxis type="category" dataKey="name" fontSize={12} />
         <Bar dataKey="Day 1" shape={renderCustomBar} stackId="a"></Bar>
         <Bar dataKey="Day 2" shape={renderCustomBar} stackId="a"></Bar>
         <Bar dataKey="Day 3" shape={renderCustomBar} stackId="a"></Bar>
