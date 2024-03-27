@@ -11,7 +11,7 @@ export default function Navbar({ data, day }: { data: any[]; day: string }) {
   return (
     <div className="pt-4">
       <Link to={"/"}>
-        <h1 className="m-auto w-max font-medium drop-shadow-md md:text-3xl sm:text-2xl text-xl">
+        <h1 className="m-auto w-max lg:text-4xl md:text-3xl sm:text-2xl drop-shadow-md">
           🏆 CS2 Copenhagen 2024 Pick'Em Stats 📊
         </h1>
       </Link>
