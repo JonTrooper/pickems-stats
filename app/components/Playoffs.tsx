@@ -22,16 +22,16 @@ export default function Playoffs({
             onMouseLeave={handleMouseLeave}
           >
             <div className="flex gap-1.5 items-center">
-              <span className="flex gap-1.5 opacity-50">
+              <div className="flex gap-1.5 opacity-45">
                 <img src="img/x32/c9.png" alt="C9" width={22} />
                 <p>Cloud9</p>
-              </span>
-              <span className="text-red-400">0</span>
+              </div>
+              <span className="text-red-400 ml-auto pr-0.5">0</span>
             </div>
             <div className="flex gap-1.5 items-center">
               <img src="img/x32/vit.png" alt="Vitality" width={22} />
               <p>Vitality</p>
-              <span className="text-green-400">2</span>
+              <span className="text-green-400 ml-auto pr-0.5">2</span>
             </div>
           </div>
         </div>
@@ -41,12 +41,16 @@ export default function Playoffs({
           onMouseLeave={handleMouseLeave}
         >
           <div className="flex gap-1.5 items-center">
-            <img src="img/x32/ts.png" alt="Spirit" width={22} />
-            <p>Spirit</p>
+            <div className="flex gap-1.5 opacity-45">
+              <img src="img/x32/ts.png" alt="Spirit" width={22} />
+              <p>Spirit</p>
+            </div>
+            <span className="text-red-400 ml-auto pr-1">1</span>
           </div>
           <div className="flex gap-1.5 items-center">
             <img src="img/x32/faze.png" alt="Faze" width={22} />
             <p>FaZe</p>
+            <span className="text-green-400 ml-auto pr-0.5">2</span>
           </div>
         </div>
         <div className="border rounded-t-md border-zinc-800 mt-2">
@@ -99,7 +103,8 @@ export default function Playoffs({
               <p>Vitality</p>
             </div>
             <div className="flex gap-1.5 items-center">
-              <p className="opacity-0">-</p>
+              <img src="img/x32/faze.png" alt="FaZe" width={22} />
+              <p>FaZe</p>
             </div>
           </div>
         </div>

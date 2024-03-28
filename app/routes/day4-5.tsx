@@ -22,6 +22,16 @@ const scoreFour = [
     lils: 130,
     jontrooper: 160,
   },
+  {
+    name: "Match 2",
+    tttslr: 170,
+    bill: 180,
+    rabbit: 160,
+    b0sskit: 190,
+    ujei: 160,
+    lils: 130,
+    jontrooper: 190,
+  },
 ];
 
 export default function Day4_5() {
@@ -46,9 +56,9 @@ export default function Day4_5() {
               <img src="img/x32/c9.png" width={22} className="b" />
               <p className="text-red-300">2-1</p>
             </div>
-            <div className="bg-neutral-900 p-1 rounded-md border border-neutral-700 flex items-center gap-1.5 w-16">
+            <div className="bg-red-900 p-1 rounded-md border border-red-700 flex items-center gap-1.5 w-16">
               <img src="img/x32/ts.png" width={22} className="b" />
-              <p className="text-neutral-300">2-1</p>
+              <p className="text-red-300">2-1</p>
             </div>
             <div className="bg-neutral-900 p-1 rounded-md border border-neutral-700 flex items-center gap-1.5 w-16">
               <img src="img/x32/et.png" width={22} className="b" />
@@ -74,9 +84,9 @@ export default function Day4_5() {
               <img src="img/x32/vit.png" width={22} className="b" />
               <p className="text-green-300">2-0</p>
             </div>
-            <div className="bg-neutral-900 p-1 rounded-md border border-neutral-700 flex items-center gap-1.5 w-16">
+            <div className="bg-red-900 p-1 rounded-md border border-red-700 flex items-center gap-1.5 w-16">
               <img src="img/x32/ts.png" width={22} className="b" />
-              <p className="text-neutral-300">2-1</p>
+              <p className="text-red-300">2-1</p>
             </div>
             <div className="bg-neutral-900 p-1 rounded-md border border-neutral-700 flex items-center gap-1.5 w-16">
               <img src="img/x32/et.png" width={22} className="b" />
@@ -102,9 +112,9 @@ export default function Day4_5() {
               <img src="img/x32/c9.png" width={22} className="b" />
               <p className="text-red-300">2-1</p>
             </div>
-            <div className="bg-neutral-900 p-1 rounded-md border border-neutral-700 flex items-center gap-1.5 w-16">
+            <div className="bg-red-900 p-1 rounded-md border border-red-700 flex items-center gap-1.5 w-16">
               <img src="img/x32/ts.png" width={22} className="b" />
-              <p className="text-neutral-300">2-0</p>
+              <p className="text-red-300">2-0</p>
             </div>
             <div className="bg-neutral-900 p-1 rounded-md border border-neutral-700 flex items-center gap-1.5 w-16">
               <img src="img/x32/navi.png" width={22} className="b" />
@@ -130,9 +140,9 @@ export default function Day4_5() {
               <img src="img/x32/vit.png" width={22} className="b" />
               <p className="text-red-300">2-1</p>
             </div>
-            <div className="bg-neutral-900 p-1 rounded-md border border-neutral-700 flex items-center gap-1.5 w-16">
+            <div className="bg-red-900 p-1 rounded-md border border-red-700 flex items-center gap-1.5 w-16">
               <img src="img/x32/ts.png" width={22} className="b" />
-              <p className="text-neutral-300">2-0</p>
+              <p className="text-red-300">2-0</p>
             </div>
             <div className="bg-neutral-900 p-1 rounded-md border border-neutral-700 flex items-center gap-1.5 w-16">
               <img src="img/x32/navi.png" width={22} className="b" />
@@ -158,9 +168,9 @@ export default function Day4_5() {
               <img src="img/x32/vit.png" width={22} className="b" />
               <p className="text-red-300">2-1</p>
             </div>
-            <div className="bg-neutral-900 p-1 rounded-md border border-neutral-700 flex items-center gap-1.5 w-16">
+            <div className="bg-red-900 p-1 rounded-md border border-red-700 flex items-center gap-1.5 w-16">
               <img src="img/x32/ts.png" width={22} className="b" />
-              <p className="text-neutral-300">2-0</p>
+              <p className="text-red-300">2-0</p>
             </div>
             <div className="bg-neutral-900 p-1 rounded-md border border-neutral-700 flex items-center gap-1.5 w-16">
               <img src="img/x32/et.png" width={22} className="b" />
@@ -186,9 +196,9 @@ export default function Day4_5() {
               <img src="img/x32/vit.png" width={22} className="b" />
               <p className="text-red-300">2-1</p>
             </div>
-            <div className="bg-neutral-900 p-1 rounded-md border border-neutral-700 flex items-center gap-1.5 w-16">
+            <div className="bg-red-900 p-1 rounded-md border border-red-700 flex items-center gap-1.5 w-16">
               <img src="img/x32/ts.png" width={22} className="b" />
-              <p className="text-neutral-300">2-1</p>
+              <p className="text-red-300">2-1</p>
             </div>
             <div className="bg-neutral-900 p-1 rounded-md border border-neutral-700 flex items-center gap-1.5 w-16">
               <img src="img/x32/et.png" width={22} className="b" />
@@ -214,9 +224,9 @@ export default function Day4_5() {
               <img src="img/x32/vit.png" width={22} className="b" />
               <p className="text-red-300">2-1</p>
             </div>
-            <div className="bg-neutral-900 p-1 rounded-md border border-neutral-700 flex items-center gap-1.5 w-16">
+            <div className="bg-green-900 p-1 rounded-md border border-green-700 flex items-center gap-1.5 w-16">
               <img src="img/x32/faze.png" width={22} className="b" />
-              <p className="text-neutral-300">2-1</p>
+              <p className="text-green-300">2-1</p>
             </div>
             <div className="bg-neutral-900 p-1 rounded-md border border-neutral-700 flex items-center gap-1.5 w-16">
               <img src="img/x32/navi.png" width={22} className="b" />

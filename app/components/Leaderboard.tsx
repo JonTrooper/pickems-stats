@@ -43,6 +43,21 @@ export default function Leaderboard({ data }: { data: any[] }) {
       <Card className="mx-auto flex items-center justify-between px-1 py-1 my-1.5 dark:bg-neutral-950 hover:dark:bg-[#0e0e0e] transition-all">
         <div className="flex items-center space-x-2.5">
           <img
+            src="img/avatars/jontrooper.png"
+            width={34}
+            className="mr-1 rounded-full"
+          />
+          <p className="text-jontrooper font-medium">JonTrooper</p>
+        </div>
+        <div className="flex items-center space-x-1">
+          <Badge className="font-medium py-1" color={"emerald-500"} size={"md"}>
+            {data[data.length - 1].jontrooper * 0.1}
+          </Badge>
+        </div>
+      </Card>
+      <Card className="mx-auto flex items-center justify-between px-1 py-1 my-1.5 dark:bg-neutral-950 hover:dark:bg-[#0e0e0e] transition-all">
+        <div className="flex items-center space-x-2.5">
+          <img
             src="img/avatars/bill.png"
             width={34}
             className="mr-1 rounded-full"
@@ -99,21 +114,6 @@ export default function Leaderboard({ data }: { data: any[] }) {
         <div className="flex items-center space-x-1">
           <Badge className="font-medium py-1" color={"emerald-200"} size={"md"}>
             {data[data.length - 1].ujei * 0.1}
-          </Badge>
-        </div>
-      </Card>
-      <Card className="mx-auto flex items-center justify-between px-1 py-1 my-1.5 dark:bg-neutral-950 hover:dark:bg-[#0e0e0e] transition-all">
-        <div className="flex items-center space-x-2.5">
-          <img
-            src="img/avatars/jontrooper.png"
-            width={34}
-            className="mr-1 rounded-full"
-          />
-          <p className="text-jontrooper font-medium">JonTrooper</p>
-        </div>
-        <div className="flex items-center space-x-1">
-          <Badge className="font-medium py-1" color={"emerald-200"} size={"md"}>
-            {data[data.length - 1].jontrooper * 0.1}
           </Badge>
         </div>
       </Card>
