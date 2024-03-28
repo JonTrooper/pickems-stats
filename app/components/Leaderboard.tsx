@@ -35,7 +35,11 @@ export default function Leaderboard({ data }: { data: any[] }) {
           On Fire!
         </Badge>
         <div className="flex items-center space-x-1">
-          <Badge className="font-medium py-1" color={"emerald-500"} size={"md"}>
+          <Badge
+            className="font-inter font-bold py-1"
+            color={"emerald-500"}
+            size={"md"}
+          >
             {data[data.length - 1].b0sskit * 0.1}
           </Badge>
         </div>
@@ -50,7 +54,11 @@ export default function Leaderboard({ data }: { data: any[] }) {
           <p className="text-jontrooper font-medium">JonTrooper</p>
         </div>
         <div className="flex items-center space-x-1">
-          <Badge className="font-medium py-1" color={"emerald-500"} size={"md"}>
+          <Badge
+            className="font-inter font-bold py-1"
+            color={"emerald-500"}
+            size={"md"}
+          >
             {data[data.length - 1].jontrooper * 0.1}
           </Badge>
         </div>
@@ -65,7 +73,11 @@ export default function Leaderboard({ data }: { data: any[] }) {
           <p className="text-bill font-medium">Bill</p>
         </div>
         <div className="flex items-center space-x-1">
-          <Badge className="font-medium py-1" color={"emerald-400"} size={"md"}>
+          <Badge
+            className="py-1 font-inter font-bold"
+            color={"emerald-400"}
+            size={"md"}
+          >
             {data[data.length - 1].bill * 0.1}
           </Badge>
         </div>
@@ -80,7 +92,11 @@ export default function Leaderboard({ data }: { data: any[] }) {
           <p className="font-medium text-neutral-100">tttslr</p>
         </div>
         <div className="flex items-center space-x-1">
-          <Badge className="font-medium py-1" color={"emerald-300"} size={"md"}>
+          <Badge
+            className="font-inter font-bold py-1"
+            color={"emerald-300"}
+            size={"md"}
+          >
             {data[data.length - 1].tttslr * 0.1}
           </Badge>
         </div>
@@ -96,7 +112,11 @@ export default function Leaderboard({ data }: { data: any[] }) {
           <p className="font-medium text-rabbit">rabbit</p>
         </div>
         <div className="flex items-center space-x-1">
-          <Badge className="font-medium py-1" color={"emerald-200"} size={"md"}>
+          <Badge
+            className="font-inter font-bold py-1"
+            color={"emerald-200"}
+            size={"md"}
+          >
             {data[data.length - 1].rabbit * 0.1}
           </Badge>
         </div>
@@ -112,7 +132,11 @@ export default function Leaderboard({ data }: { data: any[] }) {
           <p className="text-ujei font-medium">ujei</p>
         </div>
         <div className="flex items-center space-x-1">
-          <Badge className="font-medium py-1" color={"emerald-200"} size={"md"}>
+          <Badge
+            className="font-inter font-bold py-1"
+            color={"emerald-200"}
+            size={"md"}
+          >
             {data[data.length - 1].ujei * 0.1}
           </Badge>
         </div>
@@ -127,7 +151,11 @@ export default function Leaderboard({ data }: { data: any[] }) {
           <p className="text-lils font-medium">Lils</p>
         </div>
         <div className="flex items-center space-x-1">
-          <Badge className="font-medium py-1" color={"emerald-50"} size={"md"}>
+          <Badge
+            className="font-inter font-bold py-1"
+            color={"emerald-50"}
+            size={"md"}
+          >
             {data[data.length - 1].lils * 0.1}
           </Badge>
         </div>
