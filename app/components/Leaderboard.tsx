@@ -5,27 +5,6 @@ export default function Leaderboard({ data }: { data: any[] }) {
   const totalMatches = data.length - 1;
   return (
     <div className="max-w-lg m-auto">
-      <Card className="mx-auto flex items-center justify-between px-1 py-1 dark:bg-neutral-950 hover:dark:bg-[#0e0e0e] transition-all">
-        <div className="flex items-center space-x-2.5">
-          <img
-            src="img/avatars/tttslr.png"
-            width={34}
-            className="mr-1 rounded-full"
-          />
-          <p className="font-medium text-neutral-100">tttslr</p>
-        </div>
-        <div className="flex items-center space-x-1">
-          <div className="text-xs mr-2 text-emerald-400 opacity-50 hover:opacity-100 transition-all">
-            {(9 / totalMatches).toLocaleString(undefined, {
-              style: "percent",
-              minimumFractionDigits: 2,
-            })}
-          </div>
-          <Badge className="font-medium py-1" color={"emerald-500"} size={"md"}>
-            {data[data.length - 1].tttslr * 0.1}
-          </Badge>
-        </div>
-      </Card>
       <Card className="mx-auto flex items-center justify-between px-1 py-1 my-1.5 dark:bg-neutral-950 hover:dark:bg-[#0e0e0e] transition-all">
         <div className="flex items-center space-x-2.5">
           <img
@@ -49,42 +28,15 @@ export default function Leaderboard({ data }: { data: any[] }) {
         <Badge
           color={"orange-400"}
           icon={RiFireFill}
-          tooltip="5 Pick Winstreak!"
+          tooltip="6 Pick Winstreak!"
           className="mr-auto ml-1"
           size={"xs"}
         >
           On Fire!
         </Badge>
         <div className="flex items-center space-x-1">
-          <div className="text-xs mr-2 text-emerald-400 opacity-50 hover:opacity-100 transition-all">
-            {(9 / totalMatches).toLocaleString(undefined, {
-              style: "percent",
-              minimumFractionDigits: 2,
-            })}
-          </div>
           <Badge className="font-medium py-1" color={"emerald-500"} size={"md"}>
             {data[data.length - 1].b0sskit * 0.1}
-          </Badge>
-        </div>
-      </Card>
-      <Card className="mx-auto flex items-center justify-between px-1 py-1 my-1.5 dark:bg-neutral-950 hover:dark:bg-[#0e0e0e] transition-all">
-        <div className="flex items-center space-x-2.5">
-          <img
-            src="img/avatars/rabbit.png"
-            width={34}
-            className="mr-1 rounded-full"
-          />
-          <p className="font-medium text-rabbit">rabbit</p>
-        </div>
-        <div className="flex items-center space-x-1">
-          <div className="text-xs mr-2 text-emerald-300 opacity-50 hover:opacity-100 transition-all">
-            {(8 / totalMatches).toLocaleString(undefined, {
-              style: "percent",
-              minimumFractionDigits: 2,
-            })}
-          </div>
-          <Badge className="font-medium py-1" color={"emerald-300"} size={"md"}>
-            {data[data.length - 1].rabbit * 0.1}
           </Badge>
         </div>
       </Card>
@@ -98,17 +50,43 @@ export default function Leaderboard({ data }: { data: any[] }) {
           <p className="text-bill font-medium">Bill</p>
         </div>
         <div className="flex items-center space-x-1">
-          <div className="text-xs mr-2 text-emerald-300 opacity-50 hover:opacity-100 transition-all">
-            {(8 / totalMatches).toLocaleString(undefined, {
-              style: "percent",
-              minimumFractionDigits: 2,
-            })}
-          </div>
-          <Badge className="font-medium py-1" color={"emerald-200"} size={"md"}>
+          <Badge className="font-medium py-1" color={"emerald-400"} size={"md"}>
             {data[data.length - 1].bill * 0.1}
           </Badge>
         </div>
       </Card>
+      <Card className="mx-auto flex items-center justify-between px-1 py-1 dark:bg-neutral-950 hover:dark:bg-[#0e0e0e] transition-all">
+        <div className="flex items-center space-x-2.5">
+          <img
+            src="img/avatars/tttslr.png"
+            width={34}
+            className="mr-1 rounded-full"
+          />
+          <p className="font-medium text-neutral-100">tttslr</p>
+        </div>
+        <div className="flex items-center space-x-1">
+          <Badge className="font-medium py-1" color={"emerald-300"} size={"md"}>
+            {data[data.length - 1].tttslr * 0.1}
+          </Badge>
+        </div>
+      </Card>
+
+      <Card className="mx-auto flex items-center justify-between px-1 py-1 my-1.5 dark:bg-neutral-950 hover:dark:bg-[#0e0e0e] transition-all">
+        <div className="flex items-center space-x-2.5">
+          <img
+            src="img/avatars/rabbit.png"
+            width={34}
+            className="mr-1 rounded-full"
+          />
+          <p className="font-medium text-rabbit">rabbit</p>
+        </div>
+        <div className="flex items-center space-x-1">
+          <Badge className="font-medium py-1" color={"emerald-200"} size={"md"}>
+            {data[data.length - 1].rabbit * 0.1}
+          </Badge>
+        </div>
+      </Card>
+
       <Card className="mx-auto flex items-center justify-between px-1 py-1 my-1.5 dark:bg-neutral-950 hover:dark:bg-[#0e0e0e] transition-all">
         <div className="flex items-center space-x-2.5">
           <img
@@ -119,13 +97,7 @@ export default function Leaderboard({ data }: { data: any[] }) {
           <p className="text-ujei font-medium">ujei</p>
         </div>
         <div className="flex items-center space-x-1">
-          <div className="text-xs mr-2 text-emerald-300 opacity-50 hover:opacity-100 transition-all">
-            {(8 / totalMatches).toLocaleString(undefined, {
-              style: "percent",
-              minimumFractionDigits: 2,
-            })}
-          </div>
-          <Badge className="font-medium py-1" color={"emerald-100"} size={"md"}>
+          <Badge className="font-medium py-1" color={"emerald-200"} size={"md"}>
             {data[data.length - 1].ujei * 0.1}
           </Badge>
         </div>
@@ -140,13 +112,7 @@ export default function Leaderboard({ data }: { data: any[] }) {
           <p className="text-jontrooper font-medium">JonTrooper</p>
         </div>
         <div className="flex items-center space-x-1">
-          <div className="text-xs mr-2 text-emerald-300 opacity-50 hover:opacity-100 transition-all">
-            {(8 / totalMatches).toLocaleString(undefined, {
-              style: "percent",
-              minimumFractionDigits: 2,
-            })}
-          </div>
-          <Badge className="font-medium py-1" color={"emerald-100"} size={"md"}>
+          <Badge className="font-medium py-1" color={"emerald-200"} size={"md"}>
             {data[data.length - 1].jontrooper * 0.1}
           </Badge>
         </div>
@@ -161,12 +127,6 @@ export default function Leaderboard({ data }: { data: any[] }) {
           <p className="text-lils font-medium">Lils</p>
         </div>
         <div className="flex items-center space-x-1">
-          <div className="text-xs mr-2 text-emerald-200 opacity-50 hover:opacity-100 transition-all">
-            {(7 / totalMatches).toLocaleString(undefined, {
-              style: "percent",
-              minimumFractionDigits: 2,
-            })}
-          </div>
           <Badge className="font-medium py-1" color={"emerald-50"} size={"md"}>
             {data[data.length - 1].lils * 0.1}
           </Badge>

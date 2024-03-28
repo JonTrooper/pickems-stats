@@ -185,6 +185,16 @@ const scoreTotal = [
     lils: 110,
     jontrooper: 140,
   },
+  {
+    name: "Match 17",
+    tttslr: 170,
+    bill: 180,
+    rabbit: 160,
+    b0sskit: 190,
+    ujei: 160,
+    lils: 130,
+    jontrooper: 160,
+  },
 ];
 
 const scoreByDay = [

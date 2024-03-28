@@ -23,7 +23,7 @@ export default function Navbar({ data, day }: { data: any[]; day: string }) {
           <Badge
             icon={RiVerifiedBadgeFill}
             className={`${
-              day === "Day 1" ? "opacity-100" : "opacity-60"
+              day === "Day 1" ? "opacity-100" : "opacity-45"
             } hover:opacity-100 transition-opacity`}
           >
             Day 1
@@ -33,7 +33,7 @@ export default function Navbar({ data, day }: { data: any[]; day: string }) {
           <Badge
             icon={RiVerifiedBadgeFill}
             className={`${
-              day === "Day 2" ? "opacity-100" : "opacity-60"
+              day === "Day 2" ? "opacity-100" : "opacity-45"
             } hover:opacity-100 transition-opacity`}
           >
             Day 2
@@ -43,7 +43,7 @@ export default function Navbar({ data, day }: { data: any[]; day: string }) {
           <Badge
             icon={RiVerifiedBadgeFill}
             className={`${
-              day === "Day 3" ? "opacity-100" : "opacity-60"
+              day === "Day 3" ? "opacity-100" : "opacity-45"
             } hover:opacity-100 transition-opacity`}
           >
             Day 3
@@ -52,12 +52,13 @@ export default function Navbar({ data, day }: { data: any[]; day: string }) {
       </div>
 
       <div className="w-max m-auto mt-1 flex gap-1">
-        <Link to={"/"}>
+        <Link to={"/day4-5"}>
           <Badge
             icon={RiVerifiedBadgeLine}
+            color={"yellow-300"}
             className={`${
-              day === "Day 4" ? "opacity-100" : "opacity-60"
-            } hover:opacity-100 transition-opacity grayscale`}
+              day === "Day 4-5" ? "opacity-100" : "opacity-45"
+            } hover:opacity-100 transition-opacity`}
           >
             Day 4-5
           </Badge>
@@ -66,7 +67,7 @@ export default function Navbar({ data, day }: { data: any[]; day: string }) {
           <Badge
             icon={RiVerifiedBadgeLine}
             className={`${
-              day === "Day 6" ? "opacity-100" : "opacity-60"
+              day === "Day 6" ? "opacity-100" : "opacity-45"
             } hover:opacity-100 transition-opacity grayscale`}
           >
             Day 6-7
@@ -74,10 +75,10 @@ export default function Navbar({ data, day }: { data: any[]; day: string }) {
         </Link>
         <Link to={"/"}>
           <Badge
-            color={"amber-300"}
+            color={"green-400"}
             icon={RiMedalFill}
             className={`${
-              day === "total" ? "opacity-100" : "opacity-60"
+              day === "total" ? "opacity-100" : "opacity-45"
             } hover:opacity-100 transition-opacity`}
           >
             Total
