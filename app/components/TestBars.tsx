@@ -6,32 +6,45 @@ const data = [
     "Day 1": 6,
     "Day 2": 4,
     "Day 3": 6,
+    "Day 4-5": 3,
     icon: "img/x32/g2.png",
     fill: "#582224",
-  },
-  {
-    name: "FaZe",
-    "Day 1": 5,
-    "Day 2": 4,
-    "Day 3": 2,
-    icon: "img/x32/faze.png",
-    fill: "#3c1316",
-  },
-  {
-    name: "Na'Vi",
-    "Day 1": 4,
-    "Day 2": 4,
-    "Day 3": 3,
-    icon: "img/x32/navi.png",
-    fill: "#594c12",
   },
   {
     name: "Vitality",
     "Day 1": 6,
     "Day 2": 4,
     "Day 3": 0,
+    "Day 4-5": 5,
     icon: "img/x32/vit.png",
     fill: "#5b5222",
+  },
+  {
+    name: "Na'Vi",
+    "Day 1": 4,
+    "Day 2": 4,
+    "Day 3": 3,
+    "Day 4-5": 3,
+    icon: "img/x32/navi.png",
+    fill: "#594c12",
+  },
+  {
+    name: "FaZe",
+    "Day 1": 5,
+    "Day 2": 4,
+    "Day 3": 2,
+    "Day 4-5": 1,
+    icon: "img/x32/faze.png",
+    fill: "#3c1316",
+  },
+  {
+    name: "Eternal Fire",
+    "Day 1": 2,
+    "Day 2": 5,
+    "Day 3": 0,
+    "Day 4-5": 4,
+    icon: "img/x32/et.png",
+    fill: "#5a5752",
   },
   {
     name: "Complexity",
@@ -40,6 +53,24 @@ const data = [
     "Day 3": 5,
     icon: "img/x32/comp.png",
     fill: "#39495c",
+  },
+  {
+    name: "Spirit",
+    "Day 1": 3,
+    "Day 2": 0,
+    "Day 3": 0,
+    "Day 4-5": 6,
+    icon: "img/x32/ts.png",
+    fill: "#5a585b",
+  },
+  {
+    name: "MOUZ",
+    "Day 1": 5,
+    "Day 2": 0,
+    "Day 3": 0,
+    "Day 4-5": 4,
+    icon: "img/x32/mouz.png",
+    fill: "#501a18",
   },
   {
     name: "Heroic",
@@ -58,12 +89,13 @@ const data = [
     fill: "#572640",
   },
   {
-    name: "Eternal Fire",
-    "Day 1": 2,
-    "Day 2": 5,
+    name: "Cloud9",
+    "Day 1": 1,
+    "Day 2": 3,
     "Day 3": 0,
-    icon: "img/x32/et.png",
-    fill: "#5a5752",
+    "Day 4-5": 2,
+    icon: "img/x32/c9.png",
+    fill: "#223459",
   },
   {
     name: "Virtus.Pro",
@@ -72,14 +104,6 @@ const data = [
     "Day 3": 1,
     icon: "img/x32/vp.png",
     fill: "#5f3716",
-  },
-  {
-    name: "MOUZ",
-    "Day 1": 5,
-    "Day 2": 0,
-    "Day 3": 0,
-    icon: "img/x32/mouz.png",
-    fill: "#501a18",
   },
   {
     name: "TheMongolz",
@@ -112,22 +136,6 @@ const data = [
     "Day 3": 0,
     icon: "img/x32/imp.png",
     fill: "#194a2a",
-  },
-  {
-    name: "Cloud9",
-    "Day 1": 1,
-    "Day 2": 3,
-    "Day 3": 0,
-    icon: "img/x32/c9.png",
-    fill: "#223459",
-  },
-  {
-    name: "Spirit",
-    "Day 1": 3,
-    "Day 2": 0,
-    "Day 3": 0,
-    icon: "img/x32/ts.png",
-    fill: "#5a585b",
   },
 ];
 
@@ -162,6 +170,7 @@ export default function TestBars() {
         <Bar dataKey="Day 1" shape={renderCustomBar} stackId="a"></Bar>
         <Bar dataKey="Day 2" shape={renderCustomBar} stackId="a"></Bar>
         <Bar dataKey="Day 3" shape={renderCustomBar} stackId="a"></Bar>
+        <Bar dataKey="Day 4-5" shape={renderCustomBar} stackId="a"></Bar>
       </BarChart>
     </ResponsiveContainer>
   );

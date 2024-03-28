@@ -1,9 +1,7 @@
 import { BarChart, BarList, Divider } from "@tremor/react";
 import Leaderboard from "~/components/Leaderboard";
 import Navbar from "~/components/Navbar";
-import Playoffs from "~/components/Playoffs";
-import RecentResults from "~/components/RecentResults";
-import Teams from "~/components/Teams";
+import PlayoffsRecentResultsState from "~/components/PlayoffsRecentResultsState";
 import TestBars from "~/components/TestBars";
 
 const scoreTotal = [
@@ -220,6 +218,16 @@ const scoreByDay = [
     Lils: 11,
     JonTrooper: 14,
   },
+  {
+    name: "Day 4-5 (Match 1/4)",
+    tttslr: 17,
+    Bill: 18,
+    rabbit: 16,
+    B0sskit: 19,
+    ujei: 16,
+    Lils: 13,
+    JonTrooper: 16,
+  },
 ];
 
 export default function Index() {
@@ -229,9 +237,7 @@ export default function Index() {
       <Divider>Leaderboard</Divider>
       <Leaderboard data={scoreTotal} />
       <Divider>Champions Stage</Divider>
-      <Playoffs />
-      <Divider>Champions Recent Results</Divider>
-      <RecentResults />
+      <PlayoffsRecentResultsState />
       <Divider>Cumulative Score by Day</Divider>
       <BarChart
         className="pr-6 opacity-90"
