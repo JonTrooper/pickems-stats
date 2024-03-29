@@ -1,10 +1,22 @@
-import { RiCrosshair2Fill, RiFireFill, RiVipCrownFill } from "@remixicon/react";
+import {
+  RiArrowDownDoubleLine,
+  RiArrowDownFill,
+  RiArrowDownSFill,
+  RiArrowDownSLine,
+  RiArrowUpCircleLine,
+  RiArrowUpDoubleLine,
+  RiArrowUpFill,
+  RiArrowUpSLine,
+  RiCrosshair2Fill,
+  RiFireFill,
+  RiVipCrownFill,
+} from "@remixicon/react";
 import { Badge, BadgeDelta, Card, SparkAreaChart } from "@tremor/react";
 
 export default function Leaderboard({ data }: { data: any[] }) {
   const totalMatches = data.length - 1;
   return (
-    <div className="max-w-lg m-auto">
+    <div className="max-w-md m-auto">
       <Card className="mx-auto flex items-center justify-between px-1 py-1 my-1.5 dark:bg-neutral-950 hover:dark:bg-[#0e0e0e] transition-all">
         <div className="flex items-center space-x-2.5">
           <img
@@ -35,8 +47,11 @@ export default function Leaderboard({ data }: { data: any[] }) {
           On Fire!
         </Badge>
         <div className="flex items-center space-x-1">
+          <div className="text-emerald-400">
+            <RiArrowUpSLine />
+          </div>
           <Badge
-            className="font-inter font-bold py-1"
+            className="font-mono font-bold py-1"
             color={"emerald-500"}
             size={"md"}
           >
@@ -52,10 +67,22 @@ export default function Leaderboard({ data }: { data: any[] }) {
             className="mr-1 rounded-full"
           />
           <p className="text-jontrooper font-medium">JonTrooper</p>
+          <Badge
+            color={"yellow-300"}
+            icon={RiCrosshair2Fill}
+            tooltip="Picked FaZe to win Team Spirit in the Quarterfinals"
+            className="ml-2"
+            size={"xs"}
+          >
+            Clutch
+          </Badge>
         </div>
         <div className="flex items-center space-x-1">
+          <div className="text-emerald-400">
+            <RiArrowUpDoubleLine />
+          </div>
           <Badge
-            className="font-inter font-bold py-1"
+            className="font-mono font-bold py-1"
             color={"emerald-500"}
             size={"md"}
           >
@@ -73,8 +100,11 @@ export default function Leaderboard({ data }: { data: any[] }) {
           <p className="text-bill font-medium">Bill</p>
         </div>
         <div className="flex items-center space-x-1">
+          <div className="text-red-400">
+            <RiArrowDownSLine />
+          </div>
           <Badge
-            className="py-1 font-inter font-bold"
+            className="py-1 font-mono font-bold"
             color={"emerald-400"}
             size={"md"}
           >
@@ -92,8 +122,11 @@ export default function Leaderboard({ data }: { data: any[] }) {
           <p className="font-medium text-neutral-100">tttslr</p>
         </div>
         <div className="flex items-center space-x-1">
+          <div className="text-red-400">
+            <RiArrowDownDoubleLine />
+          </div>
           <Badge
-            className="font-inter font-bold py-1"
+            className="font-mono font-bold py-1"
             color={"emerald-300"}
             size={"md"}
           >
@@ -113,7 +146,7 @@ export default function Leaderboard({ data }: { data: any[] }) {
         </div>
         <div className="flex items-center space-x-1">
           <Badge
-            className="font-inter font-bold py-1"
+            className="font-mono font-bold py-1"
             color={"emerald-200"}
             size={"md"}
           >
@@ -133,7 +166,7 @@ export default function Leaderboard({ data }: { data: any[] }) {
         </div>
         <div className="flex items-center space-x-1">
           <Badge
-            className="font-inter font-bold py-1"
+            className="font-mono font-bold py-1"
             color={"emerald-200"}
             size={"md"}
           >
@@ -149,11 +182,20 @@ export default function Leaderboard({ data }: { data: any[] }) {
             className="mr-1 rounded-full"
           />
           <p className="text-lils font-medium">Lils</p>
+          <Badge
+            color={"blue-500"}
+            icon={RiCrosshair2Fill}
+            tooltip="Picked Cloud9 to win G2 on Day 1"
+            className="ml-2"
+            size={"xs"}
+          >
+            Clutch
+          </Badge>
         </div>
         <div className="flex items-center space-x-1">
           <Badge
-            className="font-inter font-bold py-1"
-            color={"emerald-50"}
+            className="font-mono font-bold py-1"
+            color={"emerald-100"}
             size={"md"}
           >
             {data[data.length - 1].lils * 0.1}
