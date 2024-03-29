@@ -205,6 +205,16 @@ const scoreTotal = [
     lils: 130,
     jontrooper: 190,
   },
+  {
+    name: "Match 19",
+    tttslr: 170,
+    bill: 180,
+    rabbit: 180,
+    b0sskit: 210,
+    ujei: 160,
+    lils: 130,
+    jontrooper: 210,
+  },
 ];
 
 const scoreByDay = [
@@ -239,14 +249,14 @@ const scoreByDay = [
     JonTrooper: 14,
   },
   {
-    name: "Day 4-5 (Match 2/4)",
+    name: "Day 4-5 (Match 3/4)",
     tttslr: 17,
     Bill: 18,
-    rabbit: 16,
-    B0sskit: 19,
+    rabbit: 18,
+    B0sskit: 21,
     ujei: 16,
     Lils: 13,
-    JonTrooper: 19,
+    JonTrooper: 21,
   },
 ];
 

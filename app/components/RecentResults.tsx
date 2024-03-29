@@ -197,7 +197,7 @@ export default function RecentResults({
               : "opacity-100"
           }`}
         >
-          <div className="w-28">
+          <div className="w-28 grayscale opacity-50">
             <div className="border rounded-md border-zinc-800">
               <div className="bg-[#1d211d] rounded-b-md p-1">
                 <div className="flex gap-1.5 items-center m-auto w-max">

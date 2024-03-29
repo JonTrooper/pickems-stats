@@ -24,20 +24,21 @@ export default function Leaderboard({ data }: { data: any[] }) {
             width={34}
             className="mr-1 rounded-full"
           />
-          <p className="font-extrabold bg-clip-text text-transparent bg-[linear-gradient(to_right,theme(colors.orange.500),theme(colors.orange.200),theme(colors.amber.400),theme(colors.orange.500))] bg-[length:200%_auto] animate-gradient">
+          <p className="text-b0sskit font-medium">B0sskit</p>
+          <Badge
+            color={"amber-200"}
+            icon={RiCrosshair2Fill}
+            tooltip="Day 3"
+            className="ml-2"
+            size={"xs"}
+          >
+            3-0
+          </Badge>
+          {/* <p className="font-extrabold bg-clip-text text-transparent bg-[linear-gradient(to_right,theme(colors.orange.500),theme(colors.orange.200),theme(colors.amber.400),theme(colors.orange.500))] bg-[length:200%_auto] animate-gradient">
             B0sskit
-          </p>
+          </p> */}
         </div>
-        <Badge
-          color={"amber-200"}
-          icon={RiCrosshair2Fill}
-          tooltip="Day 3"
-          className="ml-2"
-          size={"xs"}
-        >
-          3-0
-        </Badge>
-        <Badge
+        {/* <Badge
           color={"orange-400"}
           icon={RiFireFill}
           tooltip="6 Pick Winstreak!"
@@ -45,11 +46,9 @@ export default function Leaderboard({ data }: { data: any[] }) {
           size={"xs"}
         >
           On Fire!
-        </Badge>
+        </Badge> */}
         <div className="flex items-center space-x-1">
-          <div className="text-emerald-400">
-            <RiArrowUpSLine />
-          </div>
+          <div className="text-emerald-400">{/* <RiArrowUpSLine /> */}</div>
           <Badge
             className="font-mono font-bold py-1"
             color={"emerald-500"}
@@ -79,7 +78,7 @@ export default function Leaderboard({ data }: { data: any[] }) {
         </div>
         <div className="flex items-center space-x-1">
           <div className="text-emerald-400">
-            <RiArrowUpDoubleLine />
+            {/* <RiArrowUpDoubleLine /> */}
           </div>
           <Badge
             className="font-mono font-bold py-1"
@@ -100,37 +99,13 @@ export default function Leaderboard({ data }: { data: any[] }) {
           <p className="text-bill font-medium">Bill</p>
         </div>
         <div className="flex items-center space-x-1">
-          <div className="text-red-400">
-            <RiArrowDownSLine />
-          </div>
+          <div className="text-red-400">{/* <RiArrowDownSLine /> */}</div>
           <Badge
             className="py-1 font-mono font-bold"
             color={"emerald-400"}
             size={"md"}
           >
             {data[data.length - 1].bill * 0.1}
-          </Badge>
-        </div>
-      </Card>
-      <Card className="mx-auto flex items-center justify-between px-1 py-1 dark:bg-neutral-950 hover:dark:bg-[#0e0e0e] transition-all">
-        <div className="flex items-center space-x-2.5">
-          <img
-            src="img/avatars/tttslr.png"
-            width={34}
-            className="mr-1 rounded-full"
-          />
-          <p className="font-medium text-neutral-100">tttslr</p>
-        </div>
-        <div className="flex items-center space-x-1">
-          <div className="text-red-400">
-            <RiArrowDownDoubleLine />
-          </div>
-          <Badge
-            className="font-mono font-bold py-1"
-            color={"emerald-300"}
-            size={"md"}
-          >
-            {data[data.length - 1].tttslr * 0.1}
           </Badge>
         </div>
       </Card>
@@ -145,12 +120,37 @@ export default function Leaderboard({ data }: { data: any[] }) {
           <p className="font-medium text-rabbit">rabbit</p>
         </div>
         <div className="flex items-center space-x-1">
+          <div className="text-emerald-400">
+            <RiArrowUpSLine />
+          </div>
           <Badge
             className="font-mono font-bold py-1"
-            color={"emerald-200"}
+            color={"emerald-400"}
             size={"md"}
           >
             {data[data.length - 1].rabbit * 0.1}
+          </Badge>
+        </div>
+      </Card>
+      <Card className="mx-auto flex items-center justify-between px-1 py-1 dark:bg-neutral-950 hover:dark:bg-[#0e0e0e] transition-all">
+        <div className="flex items-center space-x-2.5">
+          <img
+            src="img/avatars/tttslr.png"
+            width={34}
+            className="mr-1 rounded-full"
+          />
+          <p className="font-medium text-neutral-100">tttslr</p>
+        </div>
+        <div className="flex items-center space-x-1">
+          <div className="text-red-400">
+            <RiArrowDownSLine />
+          </div>
+          <Badge
+            className="font-mono font-bold py-1"
+            color={"emerald-300"}
+            size={"md"}
+          >
+            {data[data.length - 1].tttslr * 0.1}
           </Badge>
         </div>
       </Card>

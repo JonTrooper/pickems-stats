@@ -55,7 +55,7 @@ export default function Navbar({ data, day }: { data: any[]; day: string }) {
         <Link to={"/day4-5"}>
           <Badge
             icon={RiVerifiedBadgeLine}
-            color={"yellow-300"}
+            color={"yellow-400"}
             className={`${
               day === "Day 4-5" ? "opacity-100" : "opacity-45"
             } hover:opacity-100 transition-opacity cursor-pointer`}

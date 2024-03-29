@@ -9,7 +9,7 @@ export default function Playoffs({
 }: PlayoffsProps) {
   return (
     <div className="flex w-max m-auto">
-      <div className="w-32">
+      <div className="w-34">
         <h1 className="text-yellow-100 text-center p-1 mb-1">Quarter-finals</h1>
         <div className="border rounded-t-md border-zinc-800">
           <h2 className="rounded-t text-center bg-neutral-900 border-b border-zinc-800">
@@ -63,12 +63,16 @@ export default function Playoffs({
             onMouseLeave={handleMouseLeave}
           >
             <div className="flex gap-1.5 items-center">
-              <img src="img/x32/et.png" alt="Eternal Fire" width={22} />
-              <p>Eternal Fire</p>
+              <div className="flex gap-1.5 opacity-45">
+                <img src="img/x32/et.png" alt="Eternal Fire" width={22} />
+                <p>Eternal Fire</p>
+              </div>
+              <span className="text-red-400 ml-auto pr-0.5">0</span>
             </div>
             <div className="flex gap-1.5 items-center">
               <img src="img/x32/navi.png" alt="Na'Vi" width={22} />
               <p>Na'Vi</p>
+              <span className="text-green-400 ml-auto pr-0.5">2</span>
             </div>
           </div>
         </div>
@@ -115,7 +119,8 @@ export default function Playoffs({
             onMouseLeave={handleMouseLeave}
           >
             <div className="flex gap-1.5 items-center">
-              <p className="opacity-0">-</p>
+              <img src="img/x32/navi.png" alt="Na'Vi" width={22} />
+              <p>Na'Vi</p>
             </div>
             <div className="flex gap-1.5 items-center">
               <p className="opacity-0">-</p>
