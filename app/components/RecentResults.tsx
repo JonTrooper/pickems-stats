@@ -57,7 +57,7 @@ export default function RecentResults({
               </div>
             </div>
           </div>
-          <div className="w-28 ml-1.5">
+          <div className="w-28 ml-1.5 grayscale opacity-50">
             <div className="border rounded-md border-zinc-800 mb-1">
               <div className="bg-[#1d211d] rounded-b-md p-1">
                 <div className="flex gap-1.5 items-center m-auto w-max">
@@ -157,7 +157,7 @@ export default function RecentResults({
                     <span className="text-green-400">2</span> -{" "}
                     <span className="text-red-400">1</span>
                   </p>
-                  <img src="img/x32/ts.png" width={24} />
+                  <img src="img/x32/vit.png" width={24} />
                 </div>
               </div>
             </div>
@@ -167,9 +167,9 @@ export default function RecentResults({
                   <img src="img/x32/faze.png" width={24} />
                   <p>
                     <span className="text-green-400">2</span> -{" "}
-                    <span className="text-red-400">0</span>
+                    <span className="text-red-400">1</span>
                   </p>
-                  <img src="img/x32/comp.png" width={24} />
+                  <img src="img/x32/ts.png" width={24} />
                 </div>
               </div>
             </div>
@@ -179,9 +179,9 @@ export default function RecentResults({
                   <img src="img/x32/faze.png" width={24} />
                   <p>
                     <span className="text-green-400">2</span> -{" "}
-                    <span className="text-red-400">1</span>
+                    <span className="text-red-400">0</span>
                   </p>
-                  <img src="img/x32/imp.png" width={24} />
+                  <img src="img/x32/comp.png" width={24} />
                 </div>
               </div>
             </div>
