@@ -1,8 +1,8 @@
-import { BarChart, BarList, Divider } from "@tremor/react";
+import { BarChart, Divider } from "@tremor/react";
 import Leaderboard from "~/components/Leaderboard";
-import Navbar from "~/components/Navbar";
-import PlayoffsRecentResultsState from "~/components/PlayoffsRecentResultsState";
-import TestBars from "~/components/TestBars";
+import Header from "~/components/Header";
+import PlayoffsRecentResultsState from "~/components/State-Playoffs";
+import TestBars from "~/components/Team-Picks";
 
 const scoreTotal = [
   {
@@ -225,6 +225,16 @@ const scoreTotal = [
     lils: 150,
     jontrooper: 230,
   },
+  {
+    name: "Match 21",
+    tttslr: 170,
+    bill: 230,
+    rabbit: 180,
+    b0sskit: 240,
+    ujei: 160,
+    lils: 200,
+    jontrooper: 280,
+  },
 ];
 
 const scoreByDay = [
@@ -268,12 +278,22 @@ const scoreByDay = [
     Lils: 15,
     JonTrooper: 23,
   },
+  {
+    name: "Day 6-7 (Match 1/2)",
+    tttslr: 17,
+    Bill: 23,
+    rabbit: 18,
+    B0sskit: 24,
+    ujei: 16,
+    Lils: 20,
+    JonTrooper: 28,
+  },
 ];
 
 export default function Index() {
   return (
     <div className="max-w-2xl m-auto p-2">
-      <Navbar data={scoreTotal} day={"total"} />
+      <Header data={scoreTotal} day={"total"} />
       <Divider>Leaderboard</Divider>
       <Leaderboard data={scoreTotal} />
       <Divider>Champions Stage</Divider>
