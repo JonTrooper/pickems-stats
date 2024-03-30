@@ -1,5 +1,5 @@
 import { Card, Divider } from "@tremor/react";
-import Navbar from "~/components/Navbar";
+import Header from "~/components/Header";
 
 const score = [
   {
@@ -230,7 +230,7 @@ const teamData = [
 export default function Day1() {
   return (
     <div className="max-w-2xl m-auto p-2">
-      <Navbar data={score} day={"Day 1"} />
+      <Header data={score} day={"Day 1"} />
       <Divider>Day 1 Results</Divider>
       <div className="max-w-md m-auto">
         <Card className="mx-auto flex max-w-lg items-center justify-between px-1 py-1 dark:bg-neutral-950 hover:dark:bg-neutral-900 transition-all">
