@@ -82,16 +82,20 @@ export default function Playoffs({
           onMouseLeave={handleMouseLeave}
         >
           <div className="flex gap-1.5 items-center">
-            <img src="img/x32/mouz.png" alt="MOUZ" width={22} />
-            <p>MOUZ</p>
+            <div className="flex gap-1.5 opacity-45">
+              <img src="img/x32/mouz.png" alt="MOUZ" width={22} />
+              <p>MOUZ</p>
+            </div>
+            <span className="text-red-400 ml-auto pr-0.5">0</span>
           </div>
           <div className="flex gap-1.5 items-center">
             <img src="img/x32/g2.png" alt="G2" width={22} />
             <p>G2</p>
+            <span className="text-green-400 ml-auto pr-0.5">2</span>
           </div>
         </div>
       </div>
-      <div className="w-32 my-auto ml-4 grayscale opacity-25">
+      <div className="w-32 my-auto ml-4">
         <h1 className="text-yellow-200 text-center p-1 mb-1">Semi-finals</h1>
         <div className="border rounded-t-md border-zinc-800">
           <h2 className="rounded-t text-center bg-neutral-900 border-b border-zinc-800">
@@ -99,7 +103,7 @@ export default function Playoffs({
           </h2>
           <div
             className="bg-[#1d1d21] p-1 hover:bg-neutral-900 transition-all cursor-default"
-            onMouseEnter={() => handleMouseEnter("")}
+            onMouseEnter={() => handleMouseEnter("vit-faze")}
             onMouseLeave={handleMouseLeave}
           >
             <div className="flex gap-1.5 items-center">
@@ -115,7 +119,7 @@ export default function Playoffs({
         <div className="rounded-b-md text-center bg-[#1d1d21] border border-t-[#101010] border-zinc-800 p-1 hover:bg-neutral-900 transition-all">
           <div
             className="bg-[#1d1d21] hover:bg-neutral-900 transition-all cursor-default"
-            onMouseEnter={() => handleMouseEnter("")}
+            onMouseEnter={() => handleMouseEnter("navi-g2")}
             onMouseLeave={handleMouseLeave}
           >
             <div className="flex gap-1.5 items-center">
@@ -123,7 +127,8 @@ export default function Playoffs({
               <p>Na'Vi</p>
             </div>
             <div className="flex gap-1.5 items-center">
-              <p className="opacity-0">-</p>
+              <img src="img/x32/g2.png" alt="G2" width={22} />
+              <p>G2</p>
             </div>
           </div>
         </div>

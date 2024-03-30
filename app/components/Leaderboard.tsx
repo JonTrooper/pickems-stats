@@ -9,22 +9,22 @@ import {
   RiArrowUpSLine,
   RiCrosshair2Fill,
   RiFireFill,
+  RiSwordFill,
   RiVipCrownFill,
 } from "@remixicon/react";
 import { Badge, BadgeDelta, Card, SparkAreaChart } from "@tremor/react";
 
 export default function Leaderboard({ data }: { data: any[] }) {
-  const totalMatches = data.length - 1;
   return (
     <div className="max-w-md m-auto">
       <Card className="mx-auto flex items-center justify-between px-1 py-1 my-1.5 dark:bg-neutral-950 hover:dark:bg-[#0e0e0e] transition-all">
-        <div className="flex items-center space-x-2.5">
+        <div className="flex items-center space-x-1">
           <img
             src="img/avatars/b0sskit.png"
             width={34}
             className="mr-1 rounded-full"
           />
-          <p className="text-b0sskit font-medium">B0sskit</p>
+          <p className="text-b0sskit font-medium px-1">B0sskit</p>
           <Badge
             color={"amber-200"}
             icon={RiCrosshair2Fill}
@@ -34,19 +34,7 @@ export default function Leaderboard({ data }: { data: any[] }) {
           >
             3-0
           </Badge>
-          {/* <p className="font-extrabold bg-clip-text text-transparent bg-[linear-gradient(to_right,theme(colors.orange.500),theme(colors.orange.200),theme(colors.amber.400),theme(colors.orange.500))] bg-[length:200%_auto] animate-gradient">
-            B0sskit
-          </p> */}
         </div>
-        {/* <Badge
-          color={"orange-400"}
-          icon={RiFireFill}
-          tooltip="6 Pick Winstreak!"
-          className="mr-auto ml-1"
-          size={"xs"}
-        >
-          On Fire!
-        </Badge> */}
         <div className="flex items-center space-x-1">
           <div className="text-emerald-400">{/* <RiArrowUpSLine /> */}</div>
           <Badge
@@ -59,21 +47,39 @@ export default function Leaderboard({ data }: { data: any[] }) {
         </div>
       </Card>
       <Card className="mx-auto flex items-center justify-between px-1 py-1 my-1.5 dark:bg-neutral-950 hover:dark:bg-[#0e0e0e] transition-all">
-        <div className="flex items-center space-x-2.5">
+        <div className="flex items-center space-x-1">
           <img
             src="img/avatars/jontrooper.png"
             width={34}
             className="mr-1 rounded-full"
           />
-          <p className="text-jontrooper font-medium">JonTrooper</p>
+          <p className="font-extrabold bg-clip-text text-transparent bg-[linear-gradient(to_right,theme(colors.orange.500),theme(colors.orange.200),theme(colors.amber.400),theme(colors.orange.500))] bg-[length:200%_auto] animate-gradient px-1">
+            JonTrooper
+          </p>
           <Badge
-            color={"yellow-300"}
-            icon={RiCrosshair2Fill}
+            color={"orange-400"}
+            icon={RiFireFill}
+            tooltip="5 Pick Winstreak!"
+            className="mr-auto ml-1"
+            size={"xs"}
+          >
+            On Fire!
+          </Badge>
+          <Badge
+            color={"rose-500"}
+            icon={RiSwordFill}
             tooltip="Picked FaZe to win Team Spirit in the Quarterfinals"
-            className="ml-2"
             size={"xs"}
           >
             Clutch
+          </Badge>
+          <Badge
+            color={"amber-200"}
+            icon={RiCrosshair2Fill}
+            tooltip="Day 4-5"
+            size={"xs"}
+          >
+            4-0
           </Badge>
         </div>
         <div className="flex items-center space-x-1">
@@ -90,13 +96,13 @@ export default function Leaderboard({ data }: { data: any[] }) {
         </div>
       </Card>
       <Card className="mx-auto flex items-center justify-between px-1 py-1 my-1.5 dark:bg-neutral-950 hover:dark:bg-[#0e0e0e] transition-all">
-        <div className="flex items-center space-x-2.5">
+        <div className="flex items-center space-x-1">
           <img
             src="img/avatars/bill.png"
             width={34}
             className="mr-1 rounded-full"
           />
-          <p className="text-bill font-medium">Bill</p>
+          <p className="text-bill font-medium px-1">Bill</p>
         </div>
         <div className="flex items-center space-x-1">
           <div className="text-red-400">{/* <RiArrowDownSLine /> */}</div>
@@ -111,18 +117,18 @@ export default function Leaderboard({ data }: { data: any[] }) {
       </Card>
 
       <Card className="mx-auto flex items-center justify-between px-1 py-1 my-1.5 dark:bg-neutral-950 hover:dark:bg-[#0e0e0e] transition-all">
-        <div className="flex items-center space-x-2.5">
+        <div className="flex items-center space-x-1">
           <img
             src="img/avatars/rabbit.png"
             width={34}
             className="mr-1 rounded-full"
           />
-          <p className="font-medium text-rabbit">rabbit</p>
+          <p className="font-medium text-rabbit px-1">rabbit</p>
         </div>
         <div className="flex items-center space-x-1">
-          <div className="text-emerald-400">
+          {/* <div className="text-emerald-400">
             <RiArrowUpSLine />
-          </div>
+          </div> */}
           <Badge
             className="font-mono font-bold py-1"
             color={"emerald-400"}
@@ -133,18 +139,18 @@ export default function Leaderboard({ data }: { data: any[] }) {
         </div>
       </Card>
       <Card className="mx-auto flex items-center justify-between px-1 py-1 dark:bg-neutral-950 hover:dark:bg-[#0e0e0e] transition-all">
-        <div className="flex items-center space-x-2.5">
+        <div className="flex items-center space-x-1">
           <img
             src="img/avatars/tttslr.png"
             width={34}
             className="mr-1 rounded-full"
           />
-          <p className="font-medium text-neutral-100">tttslr</p>
+          <p className="font-medium text-neutral-100 px-1">tttslr</p>
         </div>
         <div className="flex items-center space-x-1">
-          <div className="text-red-400">
+          {/* <div className="text-red-400">
             <RiArrowDownSLine />
-          </div>
+          </div> */}
           <Badge
             className="font-mono font-bold py-1"
             color={"emerald-300"}
@@ -156,13 +162,13 @@ export default function Leaderboard({ data }: { data: any[] }) {
       </Card>
 
       <Card className="mx-auto flex items-center justify-between px-1 py-1 my-1.5 dark:bg-neutral-950 hover:dark:bg-[#0e0e0e] transition-all">
-        <div className="flex items-center space-x-2.5">
+        <div className="flex items-center space-x-1">
           <img
             src="img/avatars/ujei.png"
             width={34}
             className="mr-1 rounded-full"
           />
-          <p className="text-ujei font-medium">ujei</p>
+          <p className="text-ujei font-medium px-1">ujei</p>
         </div>
         <div className="flex items-center space-x-1">
           <Badge
@@ -175,16 +181,16 @@ export default function Leaderboard({ data }: { data: any[] }) {
         </div>
       </Card>
       <Card className="mx-auto flex items-center justify-between px-1 py-1 dark:bg-neutral-950 hover:dark:bg-[#0e0e0e] transition-all">
-        <div className="flex items-center space-x-2.5">
+        <div className="flex items-center space-x-1">
           <img
             src="img/avatars/lils.png"
             width={34}
             className="mr-1 rounded-full"
           />
-          <p className="text-lils font-medium">Lils</p>
+          <p className="text-lils font-medium px-1">Lils</p>
           <Badge
-            color={"blue-500"}
-            icon={RiCrosshair2Fill}
+            color={"sky-500"}
+            icon={RiSwordFill}
             tooltip="Picked Cloud9 to win G2 on Day 1"
             className="ml-2"
             size={"xs"}
