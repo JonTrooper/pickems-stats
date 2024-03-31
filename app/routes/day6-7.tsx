@@ -22,6 +22,16 @@ const scoreFive = [
     lils: 200,
     jontrooper: 280,
   },
+  {
+    name: "Match 2",
+    tttslr: 220,
+    bill: 230,
+    rabbit: 180,
+    b0sskit: 240,
+    ujei: 160,
+    lils: 240,
+    jontrooper: 330,
+  },
 ];
 
 export default function Day4_5() {
@@ -46,9 +56,9 @@ export default function Day4_5() {
               <img src="img/x32/vit.png" width={22} />
               <p className="text-red-300">2-1</p>
             </div>
-            <div className="bg-neutral-900 p-1 rounded-md border border-neutral-700 flex items-center gap-1.5 w-16">
+            <div className="bg-green-900 p-1 rounded-md border border-green-700 flex items-center gap-1.5 w-16">
               <img src="img/x32/navi.png" width={22} />
-              <p className="text-neutral-300">2-1</p>
+              <p className="text-green-300">2-1</p>
             </div>
           </div>
         </Card>
@@ -66,9 +76,9 @@ export default function Day4_5() {
               <img src="img/x32/faze.png" width={22} />
               <p className="text-green-300">2-1</p>
             </div>
-            <div className="bg-neutral-900 p-1 rounded-md border border-neutral-700 flex items-center gap-1.5 w-16">
+            <div className="bg-red-900 p-1 rounded-md border border-red-700 flex items-center gap-1.5 w-16">
               <img src="img/x32/g2.png" width={22} />
-              <p className="text-neutral-300">2-0</p>
+              <p className="text-red-300">2-0</p>
             </div>
           </div>
         </Card>
@@ -86,9 +96,9 @@ export default function Day4_5() {
               <img src="img/x32/vit.png" width={22} />
               <p className="text-red-300">2-1</p>
             </div>
-            <div className="bg-neutral-900 p-1 rounded-md border border-neutral-700 flex items-center gap-1.5 w-16">
+            <div className="bg-red-900 p-1 rounded-md border border-red-700 flex items-center gap-1.5 w-16">
               <img src="img/x32/g2.png" width={22} />
-              <p className="text-neutral-300">2-1</p>
+              <p className="text-red-300">2-1</p>
             </div>
           </div>
         </Card>
@@ -106,9 +116,9 @@ export default function Day4_5() {
               <img src="img/x32/vit.png" width={22} />
               <p className="text-red-300">2-1</p>
             </div>
-            <div className="bg-neutral-900 p-1 rounded-md border border-neutral-700 flex items-center gap-1.5 w-16">
+            <div className="bg-red-900 p-1 rounded-md border border-red-700 flex items-center gap-1.5 w-16">
               <img src="img/x32/g2.png" width={22} />
-              <p className="text-neutral-300">2-0</p>
+              <p className="text-red-300">2-0</p>
             </div>
           </div>
         </Card>
@@ -126,9 +136,9 @@ export default function Day4_5() {
               <img src="img/x32/vit.png" width={22} />
               <p className="text-red-300">2-0</p>
             </div>
-            <div className="bg-neutral-900 p-1 rounded-md border border-neutral-700 flex items-center gap-1.5 w-16">
+            <div className="bg-red-900 p-1 rounded-md border border-red-700 flex items-center gap-1.5 w-16">
               <img src="img/x32/g2.png" width={22} />
-              <p className="text-neutral-300">2-1</p>
+              <p className="text-red-300">2-1</p>
             </div>
           </div>
         </Card>
@@ -146,9 +156,9 @@ export default function Day4_5() {
               <img src="img/x32/faze.png" width={22} />
               <p className="text-green-300">2-1</p>
             </div>
-            <div className="bg-neutral-900 p-1 rounded-md border border-neutral-700 flex items-center gap-1.5 w-16">
+            <div className="bg-green-900 p-1 rounded-md border border-green-700 flex items-center gap-1.5 w-16">
               <img src="img/x32/navi.png" width={22} />
-              <p className="text-neutral-300">2-0</p>
+              <p className="text-red-300">2-0</p>
             </div>
           </div>
         </Card>
@@ -166,9 +176,9 @@ export default function Day4_5() {
               <img src="img/x32/faze.png" width={22} />
               <p className="text-green-300">2-1</p>
             </div>
-            <div className="bg-neutral-900 p-1 rounded-md border border-neutral-700 flex items-center gap-1.5 w-16">
+            <div className="bg-green-900 p-1 rounded-md border border-green-700 flex items-center gap-1.5 w-16">
               <img src="img/x32/navi.png" width={22} />
-              <p className="text-neutral-300">2-1</p>
+              <p className="text-green-300">2-1</p>
             </div>
           </div>
         </Card>

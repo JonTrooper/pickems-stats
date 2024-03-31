@@ -248,6 +248,18 @@ export default function RecentResults({
                   <img src="img/x32/navi.png" width={24} />
                   <p>
                     <span className="text-green-400">2</span> -{" "}
+                    <span className="text-red-400">1</span>
+                  </p>
+                  <img src="img/x32/g2.png" width={24} />
+                </div>
+              </div>
+            </div>
+            <div className="border rounded-md border-zinc-800 my-1">
+              <div className="bg-[#1d211d] rounded-b-md p-1">
+                <div className="flex gap-1.5 items-center m-auto w-max">
+                  <img src="img/x32/navi.png" width={24} />
+                  <p>
+                    <span className="text-green-400">2</span> -{" "}
                     <span className="text-red-400">0</span>
                   </p>
                   <img src="img/x32/et.png" width={24} />
@@ -263,18 +275,6 @@ export default function RecentResults({
                     <span className="text-red-400">0</span>
                   </p>
                   <img src="img/x32/pain.png" width={24} />
-                </div>
-              </div>
-            </div>
-            <div className="border rounded-md border-zinc-800 my-1">
-              <div className="bg-[#211d1d] rounded-b-md p-1">
-                <div className="flex gap-1.5 items-center m-auto w-max">
-                  <img src="img/x32/navi.png" width={24} />
-                  <p>
-                    <span className="text-red-400">1</span> -{" "}
-                    <span className="text-green-400">2</span>
-                  </p>
-                  <img src="img/x32/c9.png" width={24} />
                 </div>
               </div>
             </div>
@@ -332,7 +332,7 @@ export default function RecentResults({
               </div>
             </div>
           </div>
-          <div className="w-28 ml-1.5">
+          <div className="w-28 ml-1.5 grayscale opacity-50">
             <div className="border rounded-md border-zinc-800">
               <div className="bg-[#1d211d] rounded-b-md p-1">
                 <div className="flex gap-1.5 items-center m-auto w-max">

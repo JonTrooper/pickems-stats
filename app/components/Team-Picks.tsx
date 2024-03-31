@@ -177,13 +177,6 @@ const renderCustomBar = (props: any) => {
         fill={payload.fill}
         opacity={0.95}
       />
-      <image
-        xlinkHref={payload.icon}
-        x={90}
-        y={y + height / 2 - 12}
-        width="24"
-        height="24"
-      />
       {/* <text
         x={90 + 30}
         y={y + 18}
@@ -227,21 +220,18 @@ const CustomTooltip = (props: any) => {
 };
 
 const renderCustomizedLabel = (props: any) => {
-  const { payload, x, y, width, value } = props;
+  const { height, x, y, width, value } = props;
   const radius = 12;
 
   return (
     <g>
-      <text
-        x={124}
-        y={y + radius + 3}
-        fill="#fff"
-        textAnchor="left"
-        dominantBaseline="middle"
-        opacity={0.6}
-      >
-        {value}
-      </text>
+      <image
+        xlinkHref={value}
+        x={88}
+        y={y + height / 2 - 12.5}
+        width="25"
+        height="25"
+      />
     </g>
   );
 };
@@ -255,7 +245,12 @@ export default function TestBars() {
         layout="vertical"
         margin={{ top: 0, right: 20, left: 22, bottom: 10 }}
       >
-        <Tooltip content={<CustomTooltip />} />
+        <Tooltip
+          content={<CustomTooltip />}
+          cursor={{
+            fill: "rgba(200,200,200,0.1)",
+          }}
+        />
         <XAxis type="number" fontSize={12} />
         <YAxis type="category" dataKey="name" fontSize={12} />
         <Bar dataKey="Day 1" shape={renderCustomBar} stackId="a"></Bar>
@@ -263,7 +258,7 @@ export default function TestBars() {
         <Bar dataKey="Day 3" shape={renderCustomBar} stackId="a"></Bar>
         <Bar dataKey="Day 4-5" shape={renderCustomBar} stackId="a"></Bar>
         <Bar dataKey="Day 6-7" shape={renderCustomBar} stackId="a">
-          <LabelList dataKey="placing" content={renderCustomizedLabel} />
+          <LabelList dataKey="icon" content={renderCustomizedLabel} />
         </Bar>
       </BarChart>
     </ResponsiveContainer>
