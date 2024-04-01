@@ -142,9 +142,7 @@ export default function Playoffs({
         </div>
       </div>
       <div className="w-32 my-auto ml-4">
-        <h1 className="text-yellow-300 text-center p-1 mb-1">
-          Grand-finals 🏆
-        </h1>
+        <h1 className="text-yellow-300 text-center p-1 mb-1">Grand-finals</h1>
         <div className="border rounded-md border-zinc-800">
           <h2 className="rounded-t text-center bg-neutral-900 border-b border-zinc-800">
             March 31st
@@ -155,12 +153,16 @@ export default function Playoffs({
             onMouseLeave={handleMouseLeave}
           >
             <div className="flex gap-1.5 items-center">
-              <img src="img/x32/faze.png" alt="FaZe" width={22} />
-              <p>FaZe</p>
+              <div className="flex gap-1.5 opacity-45">
+                <img src="img/x32/faze.png" alt="FaZe" width={22} />
+                <p>FaZe</p>
+              </div>
+              <span className="text-red-400 ml-auto pr-1">1</span>
             </div>
             <div className="flex gap-1.5 items-center">
               <img src="img/x32/navi.png" alt="Na'Vi" width={22} />
-              <p>Na'Vi</p>
+              <p className="text-yellow-200">Na'Vi 🏆</p>
+              <span className="text-green-400 ml-auto pr-0.5">2</span>
             </div>
           </div>
         </div>

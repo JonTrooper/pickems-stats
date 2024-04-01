@@ -20,6 +20,16 @@ const data = [
     fill: "#bc3131",
   },
   {
+    name: "Na'Vi",
+    "Day 1": 4,
+    "Day 2": 4,
+    "Day 3": 3,
+    "Day 4-5": 3,
+    "Day 6-7": 7,
+    icon: "img/x32/navi.png",
+    fill: "#bca331",
+  },
+  {
     name: "Vitality",
     "Day 1": 6,
     "Day 2": 4,
@@ -31,22 +41,12 @@ const data = [
     placing: "4th",
   },
   {
-    name: "Na'Vi",
-    "Day 1": 4,
-    "Day 2": 4,
-    "Day 3": 3,
-    "Day 4-5": 3,
-    "Day 6-7": 3,
-    icon: "img/x32/navi.png",
-    fill: "#bca331",
-  },
-  {
     name: "FaZe",
     "Day 1": 5,
     "Day 2": 4,
     "Day 3": 2,
     "Day 4-5": 1,
-    "Day 6-7": 3,
+    "Day 6-7": 6,
     icon: "img/x32/faze_light.png",
     fill: "#bc3141",
   },
@@ -236,7 +236,7 @@ const renderCustomizedLabel = (props: any) => {
   );
 };
 
-export default function TestBars() {
+export default function TeamBars() {
   return (
     <ResponsiveContainer width="99%" height={560}>
       <BarChart
